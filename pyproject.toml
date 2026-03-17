@@ -1,0 +1,13 @@
+[build-system]
+requires = ["hatchling >= 1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fac-tools"
+version = "0.0,0"
+description = "Tools to help manage WP:FA on enwiki"
+requires-python = ">= 3.11"
+license = "MIT"
+license-files = "LICENSE"
+
+[project.scripts]
