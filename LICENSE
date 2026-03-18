@@ -19,3 +19,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+
+Note that some data files in the tests directory are copied from the English
+Language Wikipedia.  These can be recognized by file names ending in "@xxxxx",
+where the number is the revision id from which they were copied.  These files
+are available under the Creative Commons Attribution-ShareAlike 4.0 License.
