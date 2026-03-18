@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 import mwparserfromhell as mwp
 
+
 @dataclass(frozen=True)
 class Archive:
     wikicode: mwp.wikicode.Wikicode
