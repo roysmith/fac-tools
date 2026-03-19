@@ -21,7 +21,7 @@ class Nomination:
         """
         wikicode = mwp.parse(text)
         revs = revisions or []
-        return Nomination(wikicode, revisions)
+        return Nomination(wikicode, revs)
 
     def _isbold(self, node: Node) -> bool:
         "Return True if node is a bit of bolded text"
