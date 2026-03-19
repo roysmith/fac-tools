@@ -95,3 +95,19 @@ def test_active_raises_with_no_revisions():
     nom = Nomination.build("some random text", [])
     with pytest.raises(ValueError):
         nom.active()
+
+
+def test_nominators_with_one(fac):
+    nom = Nomination.build(fac("Crusading_movement/archive2@1343969032"))
+    assert nom.nominators() == ["Borsoka"]
+
+
+def test_nominators_with_two(fac):
+    nom = Nomination.build(fac("Horizon_Zero_Dawn/archive1@1344093782"))
+    assert nom.nominators() == ["ZooBlazer", "OceanHok"]
+
+
+def test_nominators_raises_with_no_data():
+    nom = Nomination.build("Nothing to see here")
+    with pytest.raises(ValueError, match="can't find nominators element"):
+        nom.nominators()

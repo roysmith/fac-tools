@@ -75,3 +75,14 @@ class Nomination:
             return now - newest_timestamp
         else:
             raise ValueError("nomination has no revisions")
+
+    def nominators(self) -> list[str]:
+        """Returns a list of the nominators's usernames"""
+        for tag in self.wikicode.filter_tags(matches="small"):
+            if tag.contents.startswith("Nominator(s):"):
+                nominators = []
+                for link in tag.contents.filter_wikilinks():
+                    if link.title.startswith("User:"):
+                        nominators.append(link.title.removeprefix("User:"))
+                return nominators
+        raise ValueError("can't find nominators element")
