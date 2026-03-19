@@ -12,10 +12,10 @@ def main():
 
 
 def build_nomination(page: Page) -> Nomination:
-    ft_revs = []
+    fac_revs = []
     for pwb_rev in page.revisions():
-        ft_revs.append(Revision(pwb_rev.timestamp, pwb_rev.user))
-    return Nomination.build(page.get(), ft_revs)
+        fac_revs.append(Revision(pwb_rev.timestamp, pwb_rev.user))
+    return Nomination.build(page.get(), fac_revs)
 
 
 if __name__ == "__main__":
