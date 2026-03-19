@@ -1,1 +1,1 @@
-from .archive import Archive
+from .nomination import Nomination

@@ -5,14 +5,13 @@ import mwparserfromhell as mwp
 from mwparserfromhell.wikicode import Wikicode, Tag, Node
 
 
-
 @dataclass(frozen=True)
-class Archive:
+class Nomination:
     wikicode: Wikicode
 
     @staticmethod
-    def build(text: str) -> Archive:
-        return Archive(mwp.parse(text))
+    def build(text: str) -> Nomination:
+        return Nomination(mwp.parse(text))
 
     def _isbold(self, node: Node) -> bool:
         "Return True if node is a bit of bolded text"
