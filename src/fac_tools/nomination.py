@@ -20,10 +20,8 @@ class Nomination:
         order, i.e. newest first.
         """
         wikicode = mwp.parse(text)
-        if revisions:
-            return Nomination(wikicode, revisions)
-        else:
-            return Nomination(wikicode, [])
+        revs = revisions or []
+        return Nomination(wikicode, revisions)
 
     def _isbold(self, node: Node) -> bool:
         "Return True if node is a bit of bolded text"
