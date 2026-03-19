@@ -23,12 +23,13 @@ def fac(datadir: Path):
     return _fac
 
 
-def test_build(fac):
+def test_build_with_no_revisions(fac):
     text = fac("Crusading_movement/archive2@1343969032")
     nom = Nomination.build(text)
     assert isinstance(nom, Nomination)
     assert isinstance(nom.wikicode, Wikicode)
     assert "===[[Crusading movement]]===" in nom.wikicode
+    assert nom.revisions == []
 
 
 def test_supports(fac):

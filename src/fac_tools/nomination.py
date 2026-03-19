@@ -1,18 +1,28 @@
 from __future__ import annotations
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 import mwparserfromhell as mwp
 from mwparserfromhell.wikicode import Wikicode
 from mwparserfromhell.nodes import Tag, Node
 
+from .revision import Revision
+
 
 @dataclass(frozen=True)
 class Nomination:
     wikicode: Wikicode
+    revisions: list[Revision]
 
     @staticmethod
-    def build(text: str) -> Nomination:
-        return Nomination(mwp.parse(text))
+    def build(text: str, revisions: list[Revision] = None) -> Nomination:
+        """It is assumed that revisions are in reverse chronological
+        order, i.e. newest first.
+        """
+        wikicode = mwp.parse(text)
+        if revisions:
+            return Nomination(wikicode, revisions)
+        else:
+            return Nomination(wikicode, [])
 
     def _isbold(self, node: Node) -> bool:
         "Return True if node is a bit of bolded text"
