@@ -1,9 +1,11 @@
+from datetime import datetime, timedelta, UTC
 from pathlib import Path
+from unittest.mock import patch
 
 from mwparserfromhell.wikicode import Wikicode
 import pytest
 
-from fac_tools import Nomination
+from fac_tools import Nomination, Revision
 
 
 @pytest.fixture
@@ -49,7 +51,47 @@ def test_title(fac):
     assert nom.title() == "Crusading movement"
 
 
-def test_title_throws_with_missing_template():
+def test_title_raises_with_missing_template():
     nom = Nomination.build("I am broken")
     with pytest.raises(RuntimeError):
         nom.title()
+
+
+@patch("fac_tools.nomination.datetime")
+def test_age(mock_datetime):
+    mock_datetime.now.return_value = datetime(2026, 3, 10, tzinfo=UTC)
+    nom = Nomination.build(
+        "some random text",
+        [
+            Revision(datetime(2026, 3, 3, tzinfo=UTC), "user3"),
+            Revision(datetime(2026, 3, 2, tzinfo=UTC), "user2"),
+            Revision(datetime(2026, 3, 1, tzinfo=UTC), "user1"),
+        ],
+    )
+    assert nom.age() == timedelta(days=9)
+
+
+def test_age_raises_with_no_revisions():
+    nom = Nomination.build("some random text", [])
+    with pytest.raises(ValueError):
+        nom.age()
+
+
+@patch("fac_tools.nomination.datetime")
+def test_active(mock_datetime):
+    mock_datetime.now.return_value = datetime(2026, 3, 10, tzinfo=UTC)
+    nom = Nomination.build(
+        "some random text",
+        [
+            Revision(datetime(2026, 3, 3, tzinfo=UTC), "user3"),
+            Revision(datetime(2026, 3, 2, tzinfo=UTC), "user2"),
+            Revision(datetime(2026, 3, 1, tzinfo=UTC), "user1"),
+        ],
+    )
+    assert nom.active() == timedelta(days=7)
+
+
+def test_active_raises_with_no_revisions():
+    nom = Nomination.build("some random text", [])
+    with pytest.raises(ValueError):
+        nom.active()

@@ -1,5 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
+from datetime import datetime, timedelta, UTC
 
 import mwparserfromhell as mwp
 from mwparserfromhell.wikicode import Wikicode
@@ -52,3 +53,25 @@ class Nomination:
                 f"There should be exactly 1 {{Featured article tools}}, found {len(templates)}"
             )
         return templates[0].get(1).value
+
+    def age(self) -> timedelta:
+        """Return the age of this nomination.  Assuming the oldest revision
+        is in the past, this will be positive.
+        """
+        if self.revisions:
+            oldest_timestamp = self.revisions[-1].timestamp
+            now = datetime.now(UTC)
+            return now - oldest_timestamp
+        else:
+            raise ValueError("nomination has no revisions")
+
+    def active(self) -> timedelta:
+        """Return the time since this nomination was last edited.  Assuming
+        the newest revision is in the past, this will be positive.
+        """
+        if self.revisions:
+            newest_timestamp = self.revisions[0].timestamp
+            now = datetime.now(UTC)
+            return now - newest_timestamp
+        else:
+            raise ValueError("nomination has no revisions")
