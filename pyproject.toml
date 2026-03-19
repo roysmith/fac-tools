@@ -11,9 +11,11 @@ license = "MIT"
 license-files = ["LICENSE"]
 dependencies = [
     "black",
+    "humanize",
     "mwparserfromhell",
     "pytest",
     "pytest-datadir",
+    "pywikibot",
 ]
 
 [project.scripts]
