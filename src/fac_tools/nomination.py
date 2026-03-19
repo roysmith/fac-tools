@@ -34,3 +34,11 @@ class Nomination:
             if word.lower() in t.value.lower() and self._isbold(t):
                 count += 1
         return count
+
+    def title(self) -> str:
+        templates = self.wikicode.filter_templates(matches="Featured article tools")
+        if len(templates) != 1:
+            raise RuntimeError(
+                f"There should be exactly 1 {{Featured article tools}}, found {len(templates)}"
+            )
+        return templates[0].get(1).value

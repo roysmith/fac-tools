@@ -41,3 +41,14 @@ def test_opposes(fac):
         fac("Serpent_labret_with_articulated_tongue/archive1@1343867890")
     )
     assert nom.oppose_count() == 1
+
+
+def test_title(fac):
+    nom = Nomination.build(fac("Crusading_movement/archive2@1343969032"))
+    assert nom.title() == "Crusading movement"
+
+
+def test_title_throws_with_missing_template():
+    nom = Nomination.build("I am broken")
+    with pytest.raises(RuntimeError):
+        nom.title()
