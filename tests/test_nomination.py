@@ -8,7 +8,7 @@ from fac_tools import Nomination
 
 @pytest.fixture
 def fac(datadir: Path):
-    def _fac(nomination_name: str) -> Wikicode:
+    def _fac(nomination_name: str) -> str:
         """Return the wikitext of a FAC nomination page.  The wikitext
         must already be stored in the test_nomination directory.
 

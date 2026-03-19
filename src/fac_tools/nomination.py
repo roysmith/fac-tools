@@ -2,7 +2,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 
 import mwparserfromhell as mwp
-from mwparserfromhell.wikicode import Wikicode, Tag, Node
+from mwparserfromhell.wikicode import Wikicode
+from mwparserfromhell.nodes import Tag, Node
 
 
 @dataclass(frozen=True)
@@ -24,7 +25,7 @@ class Nomination:
     def oppose_count(self) -> int:
         return self._vote_count("oppose")
 
-    def _vote_count(self, word) -> int:
+    def _vote_count(self, word: str) -> int:
         count = 0
         for h in self.wikicode.filter_headings():
             if word.lower() in h.title.lower():

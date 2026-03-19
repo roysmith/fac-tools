@@ -1,1 +1,1 @@
-from .nomination import Nomination
+from .nomination import Nomination as Nomination
