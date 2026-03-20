@@ -12,10 +12,11 @@ from .revision import Revision
 @dataclass(frozen=True)
 class Nomination:
     wikicode: Wikicode
+    nomination: str  # 'Wikipedia:Featured article candidates/Foo/archiveN'
     revisions: list[Revision]
 
     @staticmethod
-    def build(text: str, revisions: list[Revision]) -> Nomination:
+    def build(text: str, nomination: str, revisions: list[Revision]) -> Nomination:
         """It is assumed that revisions are in reverse chronological
         order, i.e. newest first.
         """

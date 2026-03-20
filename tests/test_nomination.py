@@ -11,13 +11,13 @@ from fac_tools import Nomination, Revision
 
 @pytest.fixture
 def fac(datadir: Path):
-    def _fac(nomination_name: str) -> tuple[str, list[Revision]]:
-        """Return the wikitext content and revision list of a FAC nomination page,
-        from the stored data in the test_nomination directory.
+    def _fac(nomination_name: str) -> Nomination:
+        """Return a Nomination from the stored data in the test_nomination directory.
 
         Nomination_name is the nomination page name with the leading
         'Wikipedia:Featured article candidates' stripped and '/<revision id>'
-        tacked on the end.
+        tacked on the end.  It is assumed that the part before the '/<revision id>'
+        is 'archive<N>'.
         """
         path = datadir / "Wikipedia:Featured article candidates" / nomination_name
         content = None
@@ -29,38 +29,38 @@ def fac(datadir: Path):
             data = json.load(f)
         revs = [Revision(*d) for d in data]
 
-        return content, revs
+        nomination_page = path.parent()
+        return Nomination(content, nomination_page, revs)
 
     return _fac
 
 
 def test_build_with_no_revisions():
-    nom = Nomination.build("blah", [])
+    nom = Nomination.build("blah", "archive99", [])
     assert isinstance(nom, Nomination)
     assert isinstance(nom.wikicode, Wikicode)
-    assert "blah" in nom.wikicode
+    assert nom.wikicode == "blah"
+    assert nom.nomination == "archive99"
     assert nom.revisions == []
 
 
 def test_supports(fac):
-    nom = Nomination.build(*fac("Crusading movement/archive2/1344125955"))
+    nom = fac("Crusading movement/archive2/1344125955")
     assert nom.support_count() == 3
 
 
 def test_opposes(fac):
-    nom = Nomination.build(
-        *fac("Serpent labret with articulated tongue/archive1/1344457733")
-    )
+    nom = fac("Serpent labret with articulated tongue/archive1/1344457733")
     assert nom.oppose_count() == 1
 
 
 def test_title(fac):
-    nom = Nomination.build(*fac("Crusading movement/archive2/1344125955"))
+    nom = fac("Crusading movement/archive2/1344125955")
     assert nom.title() == "Crusading movement"
 
 
 def test_title_raises_with_missing_template():
-    nom = Nomination.build("I am broken", [])
+    nom = Nomination.build("I am broken", "archive", [])
     with pytest.raises(RuntimeError):
         nom.title()
 
@@ -70,6 +70,7 @@ def test_age(mock_datetime):
     mock_datetime.now.return_value = datetime(2026, 3, 10, tzinfo=UTC)
     nom = Nomination.build(
         "some random text",
+        "archive",
         [
             Revision(datetime(2026, 3, 3, tzinfo=UTC), "user3"),
             Revision(datetime(2026, 3, 2, tzinfo=UTC), "user2"),
@@ -80,7 +81,7 @@ def test_age(mock_datetime):
 
 
 def test_age_raises_with_no_revisions():
-    nom = Nomination.build("some random text", [])
+    nom = Nomination.build("some random text", "archive", [])
     with pytest.raises(ValueError):
         nom.age()
 
@@ -90,6 +91,7 @@ def test_active(mock_datetime):
     mock_datetime.now.return_value = datetime(2026, 3, 10, tzinfo=UTC)
     nom = Nomination.build(
         "some random text",
+        "archive",
         [
             Revision(datetime(2026, 3, 3, tzinfo=UTC), "user3"),
             Revision(datetime(2026, 3, 2, tzinfo=UTC), "user2"),
@@ -100,22 +102,22 @@ def test_active(mock_datetime):
 
 
 def test_active_raises_with_no_revisions():
-    nom = Nomination.build("some random text", [])
+    nom = Nomination.build("some random text", "archive", [])
     with pytest.raises(ValueError):
         nom.active()
 
 
 def test_nominators_with_one(fac):
-    nom = Nomination.build(*fac("Crusading movement/archive2/1344125955"))
+    nom = fac("Crusading movement/archive2/1344125955")
     assert nom.nominators() == ["Borsoka"]
 
 
 def test_nominators_with_two(fac):
-    nom = Nomination.build(*fac("Horizon Zero Dawn/archive1/1344093782"))
+    nom = ac("Horizon Zero Dawn/archive1/1344093782")
     assert nom.nominators() == ["ZooBlazer", "OceanHok"]
 
 
 def test_nominators_raises_with_no_data():
-    nom = Nomination.build("Nothing to see here", [])
+    nom = Nomination.build("Nothing to see here", "archive", [])
     with pytest.raises(ValueError, match="can't find nominators element"):
         nom.nominators()
