@@ -1,4 +1,5 @@
 from datetime import datetime, timedelta, UTC
+import json
 from pathlib import Path
 from unittest.mock import patch
 
@@ -10,49 +11,56 @@ from fac_tools import Nomination, Revision
 
 @pytest.fixture
 def fac(datadir: Path):
-    def _fac(nomination_name: str) -> str:
-        """Return the wikitext of a FAC nomination page.  The wikitext
-        must already be stored in the test_nomination directory.
+    def _fac(nomination_name: str) -> tuple[str, list[Revision]]:
+        """Return the wikitext content and revision list of a FAC nomination page,
+        from the stored data in the test_nomination directory.
 
         Nomination_name is the nomination page name with the leading
-        'Wikipedia:Featured article candidates' stripped and '@<revision id>'
-        tacked on the end, and then url-encoded.
+        'Wikipedia:Featured article candidates' stripped and '/<revision id>'
+        tacked on the end.
         """
-        path = datadir / "Wikipedia:Featured_article_candidates" / nomination_name
-        with path.open() as f:
-            return f.read()
+        path = datadir / "Wikipedia:Featured article candidates" / nomination_name
+        content = None
+        with (path / "content.txt").open() as f:
+            content = f.read()
+
+        data = None
+        with (path / "revs.json").open() as f:
+            data = json.load(f)
+        revs = [Revision(*d) for d in data]
+
+        return content, revs
 
     return _fac
 
 
-def test_build_with_no_revisions(fac):
-    text = fac("Crusading_movement/archive2@1343969032")
-    nom = Nomination.build(text)
+def test_build_with_no_revisions():
+    nom = Nomination.build("blah", [])
     assert isinstance(nom, Nomination)
     assert isinstance(nom.wikicode, Wikicode)
-    assert "===[[Crusading movement]]===" in nom.wikicode
+    assert "blah" in nom.wikicode
     assert nom.revisions == []
 
 
 def test_supports(fac):
-    nom = Nomination.build(fac("Crusading_movement/archive2@1343969032"))
+    nom = Nomination.build(*fac("Crusading movement/archive2/1344125955"))
     assert nom.support_count() == 3
 
 
 def test_opposes(fac):
     nom = Nomination.build(
-        fac("Serpent_labret_with_articulated_tongue/archive1@1343867890")
+        *fac("Serpent labret with articulated tongue/archive1/1344457733")
     )
     assert nom.oppose_count() == 1
 
 
 def test_title(fac):
-    nom = Nomination.build(fac("Crusading_movement/archive2@1343969032"))
+    nom = Nomination.build(*fac("Crusading movement/archive2/1344125955"))
     assert nom.title() == "Crusading movement"
 
 
 def test_title_raises_with_missing_template():
-    nom = Nomination.build("I am broken")
+    nom = Nomination.build("I am broken", [])
     with pytest.raises(RuntimeError):
         nom.title()
 
@@ -98,16 +106,16 @@ def test_active_raises_with_no_revisions():
 
 
 def test_nominators_with_one(fac):
-    nom = Nomination.build(fac("Crusading_movement/archive2@1343969032"))
+    nom = Nomination.build(*fac("Crusading movement/archive2/1344125955"))
     assert nom.nominators() == ["Borsoka"]
 
 
 def test_nominators_with_two(fac):
-    nom = Nomination.build(fac("Horizon_Zero_Dawn/archive1@1344093782"))
+    nom = Nomination.build(*fac("Horizon Zero Dawn/archive1/1344093782"))
     assert nom.nominators() == ["ZooBlazer", "OceanHok"]
 
 
 def test_nominators_raises_with_no_data():
-    nom = Nomination.build("Nothing to see here")
+    nom = Nomination.build("Nothing to see here", [])
     with pytest.raises(ValueError, match="can't find nominators element"):
         nom.nominators()

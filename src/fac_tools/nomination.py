@@ -15,13 +15,12 @@ class Nomination:
     revisions: list[Revision]
 
     @staticmethod
-    def build(text: str, revisions: list[Revision] = None) -> Nomination:
+    def build(text: str, revisions: list[Revision]) -> Nomination:
         """It is assumed that revisions are in reverse chronological
         order, i.e. newest first.
         """
         wikicode = mwp.parse(text)
-        revs = revisions or []
-        return Nomination(wikicode, revs)
+        return Nomination(wikicode, revisions)
 
     def _isbold(self, node: Node) -> bool:
         "Return True if node is a bit of bolded text"
