@@ -1,4 +1,4 @@
-from humanize import naturaltime, naturaldelta
+from humanize import ordinal, naturaldelta
 
 import mwparserfromhell as mwp
 from pywikibot import Site, Page
@@ -23,12 +23,19 @@ def main():
     print(
         f"[[{nom.title()}]]"
         f" ("
-        f"[[{nom.nomination}|nomination]]{{{{cdot}}}}"
-        f"{naturaldelta(nom.age())} ago{{{{cdot}}}}"
-        f"Active {naturaldelta(nom.active())} ago{{{{cdot}}}}"
-        f"{plural(len(nom.nominators()), 'nominator', 'nominators')}{{{{cdot}}}}"
-        f"{plural(len(nom.editors()), 'participant', 'participants')}{{{{cdot}}}}"
-        f"{plural(nom.support_count(), 'support', 'supports')}{{{{cdot}}}}"
+        f"[[{nom.nomination}|nomination]]"
+        f": {ordinal(nom.archive_number())}"
+        f"{{{{cdot}}}}"
+        f"{naturaldelta(nom.age())} ago"
+        f"{{{{cdot}}}}"
+        f"Active {naturaldelta(nom.active())} ago"
+        f"{{{{cdot}}}}"
+        f"{plural(len(nom.nominators()), 'nominator', 'nominators')}"
+        f"{{{{cdot}}}}"
+        f"{plural(len(nom.editors()), 'participant', 'participants')}"
+        f"{{{{cdot}}}}"
+        f"{plural(nom.support_count(), 'support', 'supports')}"
+        f"{{{{cdot}}}}"
         f"{plural(nom.oppose_count(), 'oppose', 'opposes')}"
         f")"
     )
@@ -36,13 +43,6 @@ def main():
 
 def plural(n: int, singular: str, plural: str) -> str:
     return f"{n} {singular if n == 1 else plural}"
-
-
-# def build_nomination(page: Page) -> Nomination:
-#     fac_revs = []
-#     for pwb_rev in page.revisions():
-#         fac_revs.append(Revision(pwb_rev.timestamp, pwb_rev.user))
-#     return Nomination.build(page.get(), fac_revs)
 
 
 if __name__ == "__main__":
