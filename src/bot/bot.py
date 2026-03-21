@@ -8,18 +8,11 @@ from fac_tools import Nomination, Revision
 
 def main():
     site = Site("en", "wikipedia")
-    nomination_page = (
-        "Wikipedia:Featured article candidates/Crusading movement/archive2"
+    nomination_page = Page(
+        site, "Wikipedia:Featured article candidates/Crusading movement/archive2"
     )
-    page = Page(site, nomination_page)
+    nom = build_nomination(nomination_page)
 
-    pwb_revisions = list(page.revisions(content=False))
-    last_timestamp = pwb_revisions[0]["timestamp"]
-    last_rev = list(page.revisions(total=1, starttime=last_timestamp, content=True))[0]
-    text = last_rev.text
-    fac_revisions = [Revision(r.timestamp, r.user) for r in pwb_revisions]
-
-    nom = Nomination(mwp.parse(text), nomination_page, fac_revisions)
     print(
         f"[[{nom.title()}]]"
         f" ("
@@ -39,6 +32,15 @@ def main():
         f"{plural(nom.oppose_count(), 'oppose', 'opposes')}"
         f")"
     )
+
+
+def build_nomination(nom_page: Page) -> Nomination:
+    pwb_revisions = list(nom_page.revisions(content=False))
+    last_timestamp = pwb_revisions[0]["timestamp"]
+    revs = list(nom_page.revisions(total=1, starttime=last_timestamp, content=True))
+    text = revs[0].text
+    fac_revisions = [Revision(r.timestamp, r.user) for r in pwb_revisions]
+    return Nomination(mwp.parse(text), nom_page.title(), fac_revisions)
 
 
 def plural(n: int, singular: str, plural: str) -> str:
