@@ -25,27 +25,25 @@ def main():
 
 
 def process_nomination(nom: Nomination, buffer: StringIO):
-    status_line = (
-        f"* "
-        f"[[{nom.title()}]]"
-        f" ("
-        f"[[{nom.nomination}|nomination]]"
-        f": {humanize.ordinal(nom.archive_number())}"
-        f"{{{{cdot}}}}"
-        f"{humanize.naturaldelta(nom.age())} old"
-        f"{{{{cdot}}}}"
-        f"Active {humanize.naturaldelta(nom.active())} ago"
-        f"{{{{cdot}}}}"
-        f"{plural(len(nom.nominators()), 'nominator', 'nominators')}"
-        f"{{{{cdot}}}}"
-        f"{plural(len(nom.editors()), 'participant', 'participants')}"
-        f"{{{{cdot}}}}"
-        f"{plural(nom.support_count(), 'support', 'supports')}"
-        f"{{{{cdot}}}}"
-        f"{plural(nom.oppose_count(), 'oppose', 'opposes')}"
-        f")"
-    )
-    print(status_line, file=buffer)
+    buffer.write(f"* ")
+    buffer.write(f"[[{nom.title()}]]")
+    buffer.write(f" (")
+    buffer.write(f"[[{nom.nomination}|nomination]]")
+    if nom.archive_number() != 1:
+        buffer.write(f": {humanize.ordinal(nom.archive_number())}")
+    buffer.write(f"{{{{cdot}}}}")
+    buffer.write(f"{humanize.naturaldelta(nom.age())} old")
+    buffer.write(f"{{{{cdot}}}}")
+    buffer.write(f"Active {humanize.naturaldelta(nom.active())} ago")
+    buffer.write(f"{{{{cdot}}}}")
+    buffer.write(f"{plural(len(nom.nominators()), 'nominator', 'nominators')}")
+    buffer.write(f"{{{{cdot}}}}")
+    buffer.write(f"{plural(len(nom.editors()), 'participant', 'participants')}")
+    buffer.write(f"{{{{cdot}}}}")
+    buffer.write(f"{plural(nom.support_count(), 'support', 'supports')}")
+    buffer.write(f"{{{{cdot}}}}")
+    buffer.write(f"{plural(nom.oppose_count(), 'oppose', 'opposes')}")
+    buffer.write(f")\n")
 
 
 def find_nom_pages(fac_index_page: Page) -> Iterable[str]:
