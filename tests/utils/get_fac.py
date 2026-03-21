@@ -3,10 +3,7 @@ from dataclasses import astuple
 import json
 from pathlib import Path
 
-from pprint import pprint
-
 from pywikibot import Site, Page
-
 from fac_tools import Nomination, Revision
 
 
