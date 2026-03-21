@@ -1,4 +1,5 @@
 from collections.abc import Iterable
+from io import StringIO
 
 import humanize
 import mwparserfromhell as mwp
@@ -11,13 +12,20 @@ def main():
     site = Site("en", "wikipedia")
 
     fac_index_page = Page(site, "Wikipedia:Featured article candidates")
+    buffer = StringIO()
+
     for n in find_nom_pages(fac_index_page):
+        print(n)
         nom = build_nomination(Page(site, n))
-        process_nomination(nom)
+        process_nomination(nom, buffer)
+
+    summary_page = Page(site, "User:FACSummaryBot/summary")
+    summary_page.text = buffer.getvalue()
+    summary_page.save()
 
 
-def process_nomination(nom: Nomination):
-    print(
+def process_nomination(nom: Nomination, buffer: StringIO):
+    status_line = (
         f"* "
         f"[[{nom.title()}]]"
         f" ("
@@ -37,6 +45,7 @@ def process_nomination(nom: Nomination):
         f"{plural(nom.oppose_count(), 'oppose', 'opposes')}"
         f")"
     )
+    print(status_line, file=buffer)
 
 
 def find_nom_pages(fac_index_page: Page) -> Iterable[str]:

@@ -16,6 +16,7 @@ dependencies = [
     "pytest",
     "pytest-datadir",
     "pywikibot",
+    "requests_oauthlib",
 ]
 
 [project.scripts]
