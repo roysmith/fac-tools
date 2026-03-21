@@ -1,8 +1,9 @@
-from datetime import datetime, timedelta, UTC
+from datetime import datetime, timedelta
 import json
 from pathlib import Path
 from unittest.mock import patch
 
+import mwparserfromhell as mwp
 from mwparserfromhell.wikicode import Wikicode
 import pytest
 
@@ -29,8 +30,8 @@ def fac(datadir: Path):
             data = json.load(f)
         revs = [Revision(*d) for d in data]
 
-        nomination_page = path.parent()
-        return Nomination(content, nomination_page, revs)
+        nomination_page = path.parent
+        return Nomination(mwp.parse(content), nomination_page, revs)
 
     return _fac
 
@@ -67,14 +68,14 @@ def test_title_raises_with_missing_template():
 
 @patch("fac_tools.nomination.datetime")
 def test_age(mock_datetime):
-    mock_datetime.now.return_value = datetime(2026, 3, 10, tzinfo=UTC)
+    mock_datetime.utcnow.return_value = datetime(2026, 3, 10)
     nom = Nomination.build(
         "some random text",
         "archive",
         [
-            Revision(datetime(2026, 3, 3, tzinfo=UTC), "user3"),
-            Revision(datetime(2026, 3, 2, tzinfo=UTC), "user2"),
-            Revision(datetime(2026, 3, 1, tzinfo=UTC), "user1"),
+            Revision(datetime(2026, 3, 3), "user3"),
+            Revision(datetime(2026, 3, 2), "user2"),
+            Revision(datetime(2026, 3, 1), "user1"),
         ],
     )
     assert nom.age() == timedelta(days=9)
@@ -88,14 +89,14 @@ def test_age_raises_with_no_revisions():
 
 @patch("fac_tools.nomination.datetime")
 def test_active(mock_datetime):
-    mock_datetime.now.return_value = datetime(2026, 3, 10, tzinfo=UTC)
+    mock_datetime.utcnow.return_value = datetime(2026, 3, 10)
     nom = Nomination.build(
         "some random text",
         "archive",
         [
-            Revision(datetime(2026, 3, 3, tzinfo=UTC), "user3"),
-            Revision(datetime(2026, 3, 2, tzinfo=UTC), "user2"),
-            Revision(datetime(2026, 3, 1, tzinfo=UTC), "user1"),
+            Revision(datetime(2026, 3, 3), "user3"),
+            Revision(datetime(2026, 3, 2), "user2"),
+            Revision(datetime(2026, 3, 1), "user1"),
         ],
     )
     assert nom.active() == timedelta(days=7)
@@ -113,7 +114,7 @@ def test_nominators_with_one(fac):
 
 
 def test_nominators_with_two(fac):
-    nom = ac("Horizon Zero Dawn/archive1/1344093782")
+    nom = fac("Horizon Zero Dawn/archive1/1344093782")
     assert nom.nominators() == ["ZooBlazer", "OceanHok"]
 
 
@@ -121,3 +122,19 @@ def test_nominators_raises_with_no_data():
     nom = Nomination.build("Nothing to see here", "archive", [])
     with pytest.raises(ValueError, match="can't find nominators element"):
         nom.nominators()
+
+
+def test_editors():
+    nom = Nomination.build(
+        "blah",
+        "archive",
+        [
+            Revision(datetime(2026, 1, 1), "user1"),
+            Revision(datetime(2026, 1, 1), "user1"),
+            Revision(datetime(2026, 1, 1), "user2"),
+            Revision(datetime(2026, 1, 1), "user1"),
+            Revision(datetime(2026, 1, 1), "user3"),
+            Revision(datetime(2026, 1, 1), "user4"),
+        ],
+    )
+    assert nom.editors() == {"user1", "user2", "user3", "user4"}

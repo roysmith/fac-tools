@@ -1,6 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta, UTC
+from datetime import datetime, timedelta
 
 import mwparserfromhell as mwp
 from mwparserfromhell.wikicode import Wikicode
@@ -21,7 +21,7 @@ class Nomination:
         order, i.e. newest first.
         """
         wikicode = mwp.parse(text)
-        return Nomination(wikicode, revisions)
+        return Nomination(wikicode, nomination, revisions)
 
     def _isbold(self, node: Node) -> bool:
         "Return True if node is a bit of bolded text"
@@ -58,7 +58,7 @@ class Nomination:
         """
         if self.revisions:
             oldest_timestamp = self.revisions[-1].timestamp
-            now = datetime.now(UTC)
+            now = datetime.utcnow()
             return now - oldest_timestamp
         else:
             raise ValueError("nomination has no revisions")
@@ -69,7 +69,7 @@ class Nomination:
         """
         if self.revisions:
             newest_timestamp = self.revisions[0].timestamp
-            now = datetime.now(UTC)
+            now = datetime.utcnow()
             return now - newest_timestamp
         else:
             raise ValueError("nomination has no revisions")
@@ -84,3 +84,7 @@ class Nomination:
                         nominators.append(link.title.removeprefix("User:"))
                 return nominators
         raise ValueError("can't find nominators element")
+
+    def editors(self) -> set(str):
+        "Returns the usernames of all the editors of this nomination"
+        return set(rev.username for rev in self.revisions)
