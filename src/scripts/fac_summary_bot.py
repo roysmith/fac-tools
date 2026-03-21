@@ -32,7 +32,7 @@ def process_nomination(nom: Nomination, buffer: StringIO):
         f"[[{nom.nomination}|nomination]]"
         f": {humanize.ordinal(nom.archive_number())}"
         f"{{{{cdot}}}}"
-        f"{humanize.naturaldelta(nom.age())} ago"
+        f"{humanize.naturaldelta(nom.age())} old"
         f"{{{{cdot}}}}"
         f"Active {humanize.naturaldelta(nom.active())} ago"
         f"{{{{cdot}}}}"
