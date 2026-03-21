@@ -138,3 +138,18 @@ def test_editors():
         ],
     )
     assert nom.editors() == {"user1", "user2", "user3", "user4"}
+
+
+def test_archive_number(fac):
+    cm = fac("Crusading movement/archive2/1344125955")
+    hzd = fac("Horizon Zero Dawn/archive1/1344093782")
+    assert cm.archive_number() == 2
+    assert hzd.archive_number() == 1
+
+
+def test_archive_number_raises_on_malformed_nomination():
+    nom = Nomination.build(
+        "whatever", "Wikipedia:Featured article candidates/Nile/archive", []
+    )
+    with pytest.raises(ValueError, match="malformed nomination path"):
+        nom.archive_number()

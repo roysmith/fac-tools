@@ -1,6 +1,8 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
+from pathlib import Path
+import re
 
 import mwparserfromhell as mwp
 from mwparserfromhell.wikicode import Wikicode
@@ -88,3 +90,10 @@ class Nomination:
     def editors(self) -> set(str):
         "Return the usernames of all the editors of this nomination"
         return set(rev.username for rev in self.revisions)
+
+    def archive_number(self) -> int:
+        archive = Path(self.nomination).parts[-1]
+        match = re.match("^archive(\d+)", archive)
+        if not match:
+            raise ValueError(f"malformed nomination path ({self.nomination})")
+        return int(match.group(1))
