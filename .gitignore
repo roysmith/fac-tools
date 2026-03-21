@@ -4,3 +4,4 @@ venv
 .vscode/
 apicache/
 throttle.ctrl
+user-config.py
