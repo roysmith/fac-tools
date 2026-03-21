@@ -1,5 +1,6 @@
-from humanize import ordinal, naturaldelta
+from collections.abc import Iterable
 
+import humanize
 import mwparserfromhell as mwp
 from pywikibot import Site, Page
 
@@ -8,20 +9,24 @@ from fac_tools import Nomination, Revision
 
 def main():
     site = Site("en", "wikipedia")
-    nomination_page = Page(
-        site, "Wikipedia:Featured article candidates/Crusading movement/archive2"
-    )
-    nom = build_nomination(nomination_page)
 
+    fac_index_page = Page(site, "Wikipedia:Featured article candidates")
+    for n in find_nom_pages(fac_index_page):
+        nom = build_nomination(Page(site, n))
+        process_nomination(nom)
+
+
+def process_nomination(nom: Nomination):
     print(
+        f"* "
         f"[[{nom.title()}]]"
         f" ("
         f"[[{nom.nomination}|nomination]]"
-        f": {ordinal(nom.archive_number())}"
+        f": {humanize.ordinal(nom.archive_number())}"
         f"{{{{cdot}}}}"
-        f"{naturaldelta(nom.age())} ago"
+        f"{humanize.naturaldelta(nom.age())} ago"
         f"{{{{cdot}}}}"
-        f"Active {naturaldelta(nom.active())} ago"
+        f"Active {humanize.naturaldelta(nom.active())} ago"
         f"{{{{cdot}}}}"
         f"{plural(len(nom.nominators()), 'nominator', 'nominators')}"
         f"{{{{cdot}}}}"
@@ -32,6 +37,16 @@ def main():
         f"{plural(nom.oppose_count(), 'oppose', 'opposes')}"
         f")"
     )
+
+
+def find_nom_pages(fac_index_page: Page) -> Iterable[str]:
+    "Return the names of the active FAC nominations"
+    code = mwp.parse(fac_index_page.text)
+    for section in code.get_sections(levels=[2], matches="nominations"):
+        for t in section.filter_templates(
+            matches="Wikipedia:Featured article candidates/.*/archive\d+"
+        ):
+            yield str(t.name)
 
 
 def build_nomination(nom_page: Page) -> Nomination:
