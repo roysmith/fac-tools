@@ -18,6 +18,13 @@ def main():
         help="don't write anything to the wiki, just log what would happen",
     )
     parser.add_argument("--debug", action="store_true")
+    parser.add_argument(
+        "-c",
+        "--count",
+        type=int,
+        help="Limt processing to COUNT nominations (for testing)",
+    )
+
     args = parser.parse_args()
 
     site = Site("en", "wikipedia")
@@ -25,7 +32,9 @@ def main():
     fac_index_page = Page(site, "Wikipedia:Featured article candidates")
     buffer = StringIO()
 
-    for n in find_nom_pages(fac_index_page):
+    noms = list(find_nom_pages(fac_index_page))
+    effective_noms = noms[: args.count] if args.count else noms
+    for n in effective_noms:
         if args.debug:
             print(n)
         nom = build_nomination(Page(site, n))
@@ -41,7 +50,7 @@ def main():
 
 def process_nomination(nom: Nomination, buffer: StringIO):
     buffer.write(f"* ")
-    buffer.write(f"[[{nom.title()}]]")
+    buffer.write(f"<big>[[{nom.title()}]]</big>")
     buffer.write(f" (")
     buffer.write(f"[[{nom.nomination}|nomination]]")
     if nom.archive_number() != 1:
