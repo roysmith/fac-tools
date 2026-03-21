@@ -75,7 +75,7 @@ class Nomination:
             raise ValueError("nomination has no revisions")
 
     def nominators(self) -> list[str]:
-        """Returns a list of the nominators's usernames"""
+        """Return a list of the nominators's usernames"""
         for tag in self.wikicode.filter_tags(matches="small"):
             if tag.contents.startswith("Nominator(s):"):
                 nominators = []
@@ -86,5 +86,5 @@ class Nomination:
         raise ValueError("can't find nominators element")
 
     def editors(self) -> set(str):
-        "Returns the usernames of all the editors of this nomination"
+        "Return the usernames of all the editors of this nomination"
         return set(rev.username for rev in self.revisions)
