@@ -1,3 +1,4 @@
+from argparse import ArgumentParser, BooleanOptionalAction
 from collections.abc import Iterable
 from io import StringIO
 
@@ -9,19 +10,33 @@ from fac_tools import Nomination, Revision
 
 
 def main():
+    parser = ArgumentParser()
+    parser.add_argument(
+        "--dry-run",
+        default=True,
+        action=BooleanOptionalAction,
+        help="don't write anything to the wiki, just log what would happen",
+    )
+    parser.add_argument("--debug", action="store_true")
+    args = parser.parse_args()
+
     site = Site("en", "wikipedia")
 
     fac_index_page = Page(site, "Wikipedia:Featured article candidates")
     buffer = StringIO()
 
     for n in find_nom_pages(fac_index_page):
-        print(n)
+        if args.debug:
+            print(n)
         nom = build_nomination(Page(site, n))
         process_nomination(nom, buffer)
 
     summary_page = Page(site, "User:FACSummaryBot/summary")
     summary_page.text = buffer.getvalue()
-    summary_page.save()
+    if args.dry_run:
+        print(summary_page.text)
+    else:
+        summary_page.save()
 
 
 def process_nomination(nom: Nomination, buffer: StringIO):
