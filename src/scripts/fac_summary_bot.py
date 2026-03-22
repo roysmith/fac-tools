@@ -14,6 +14,11 @@ site = None
 
 
 def main():
+    #
+    # Note: Assumptions are made all over the place (including in how
+    # the Nomination class calculates age) that the wiki is running
+    # in UTC and the wiki's clock agrees with the local clock.
+    #
     parser = ArgumentParser()
     parser.add_argument(
         "--dry-run",
@@ -23,21 +28,20 @@ def main():
     )
     parser.add_argument("--debug", action="store_true")
     global args
-    args = parser.parse_args()
-
     global site
+    args = parser.parse_args()
     site = Site("en", "wikipedia")
+    process_index()
 
+
+def process_index():
     index_page = Page(site, "Wikipedia:Featured article candidates")
     buffer = StringIO()
 
-    nominations = find_noms_in_section(index_page, "Nominations")
-    older_nominations = find_noms_in_section(index_page, "Older nominations")
-
-    buffer.write("==Nominations==\n")
-    process_section(nominations, buffer)
-    buffer.write("==Older nominations==\n")
-    process_section(older_nominations, buffer)
+    for section_name in ["Nominations", "Older nominations"]:
+        nominations = find_noms_in_section(index_page, section_name)
+        buffer.write(f"=={section_name}==\n")
+        process_section(nominations, buffer)
 
     summary_page = Page(site, "User:FACSummaryBot/summary")
     summary_page.text = buffer.getvalue()
