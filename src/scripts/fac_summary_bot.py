@@ -1,6 +1,7 @@
 from argparse import ArgumentParser, BooleanOptionalAction
 from collections.abc import Iterable
 from io import StringIO
+from time import sleep
 
 import humanize
 import mwparserfromhell as mwp
@@ -27,11 +28,22 @@ def main():
         help="don't write anything to the wiki, just log what would happen",
     )
     parser.add_argument("--debug", action="store_true")
+    parser.add_argument(
+        "--sleep",
+        type=int,
+        help="minutes to sleep between cycles (just runs once if ommitted)",
+    )
     global args
     global site
     args = parser.parse_args()
     site = Site("en", "wikipedia")
-    process_index()
+
+    if args.sleep:
+        while True:
+            process_index()
+            sleep(args.sleep * 60)
+    else:
+        process_index()
 
 
 def process_index():
