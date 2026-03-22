@@ -28,10 +28,11 @@ def main():
     global site
     site = Site("en", "wikipedia")
 
-    fac_index_page = Page(site, "Wikipedia:Featured article candidates")
+    index_page = Page(site, "Wikipedia:Featured article candidates")
     buffer = StringIO()
 
-    nominations, older_nominations = find_nom_pages(fac_index_page)
+    nominations = find_noms_in_section(index_page, "Nominations")
+    older_nominations = find_noms_in_section(index_page, "Older nominations")
 
     buffer.write("==Nominations==\n")
     process_section(nominations, buffer)
@@ -76,22 +77,16 @@ def process_nomination(nom: Nomination, buffer: StringIO):
     buffer.write(f")\n")
 
 
-def find_nom_pages(fac_index_page: Page) -> tuple[list[str], list[str]]:
-    """Return the names of the active FAC nominations.  Two lists are
-    returned: the first has the "nominations" section, the second has
-    the "older nominations".
+def find_noms_in_section(index_page: Page, section: str) -> Iterable[str]:
+    """Return the names of the active FAC nominations in a given section.
+    Section would typically be be one of "nominations" or "older nominations".
+    It is assumed section names are unique.
     """
-    # This assumes each get_sections() call returns a single section
-    code = mwp.parse(fac_index_page.text)
-    for section in code.get_sections(levels=[2], matches="^nominations$"):
-        nominations = list(get_nominations(section))
-    for section in code.get_sections(levels=[2], matches="^older nominations$"):
-        older_nominations = list(get_nominations(section))
-    return nominations, older_nominations
-
-
-def get_nominations(section: mwp.wikicode.Wikicode) -> Iterable[str]:
-    for t in section.filter_templates(
+    code = mwp.parse(index_page.text)
+    sections = code.get_sections(levels=[2], matches=f"^{section}$")
+    if len(sections) != 1:
+        raise ValueError(f"found {len(sections)} sections matching '{section}'")
+    for t in sections[0].filter_templates(
         matches="Wikipedia:Featured article candidates/.*/archive\d+"
     ):
         yield str(t.name)
