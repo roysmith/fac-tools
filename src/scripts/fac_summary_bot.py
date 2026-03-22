@@ -55,11 +55,12 @@ def process_index():
         buffer.write(f"=={section_name}==\n")
         process_section(nominations, buffer)
 
-    summary_page = Page(site, "User:FACSummaryBot/summary")
-    summary_page.text = buffer.getvalue()
+    text = buffer.getvalue()
     if args.dry_run:
-        print(summary_page.text)
+        print(text)
     else:
+        summary_page = Page(site, "User:FACSummaryBot/summary")
+        summary_page.text = text
         summary_page.save()
 
 
