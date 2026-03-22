@@ -8,6 +8,10 @@ from pywikibot import Site, Page
 
 from fac_tools import Nomination, Revision
 
+# Command-line args, available globally
+args = None
+site = None
+
 
 def main():
     parser = ArgumentParser()
@@ -18,27 +22,21 @@ def main():
         help="don't write anything to the wiki, just log what would happen",
     )
     parser.add_argument("--debug", action="store_true")
-    parser.add_argument(
-        "-c",
-        "--count",
-        type=int,
-        help="Limt processing to COUNT nominations (for testing)",
-    )
-
+    global args
     args = parser.parse_args()
 
+    global site
     site = Site("en", "wikipedia")
 
     fac_index_page = Page(site, "Wikipedia:Featured article candidates")
     buffer = StringIO()
 
-    noms = list(find_nom_pages(fac_index_page))
-    effective_noms = noms[: args.count] if args.count else noms
-    for n in effective_noms:
-        if args.debug:
-            print(n)
-        nom = build_nomination(Page(site, n))
-        process_nomination(nom, buffer)
+    nominations, older_nominations = find_nom_pages(fac_index_page)
+
+    buffer.write("==Nominations==\n")
+    process_section(nominations, buffer)
+    buffer.write("==Older nominations==\n")
+    process_section(older_nominations, buffer)
 
     summary_page = Page(site, "User:FACSummaryBot/summary")
     summary_page.text = buffer.getvalue()
@@ -46,6 +44,14 @@ def main():
         print(summary_page.text)
     else:
         summary_page.save()
+
+
+def process_section(nominations: list[Nomination], buffer: StringIO):
+    for n in nominations:
+        if args.debug:
+            print(n)
+        nom = build_nomination(Page(site, n))
+        process_nomination(nom, buffer)
 
 
 def process_nomination(nom: Nomination, buffer: StringIO):
@@ -70,14 +76,25 @@ def process_nomination(nom: Nomination, buffer: StringIO):
     buffer.write(f")\n")
 
 
-def find_nom_pages(fac_index_page: Page) -> Iterable[str]:
-    "Return the names of the active FAC nominations"
+def find_nom_pages(fac_index_page: Page) -> tuple[list[str], list[str]]:
+    """Return the names of the active FAC nominations.  Two lists are
+    returned: the first has the "nominations" section, the second has
+    the "older nominations".
+    """
+    # This assumes each get_sections() call returns a single section
     code = mwp.parse(fac_index_page.text)
-    for section in code.get_sections(levels=[2], matches="nominations"):
-        for t in section.filter_templates(
-            matches="Wikipedia:Featured article candidates/.*/archive\d+"
-        ):
-            yield str(t.name)
+    for section in code.get_sections(levels=[2], matches="^nominations$"):
+        nominations = list(get_nominations(section))
+    for section in code.get_sections(levels=[2], matches="^older nominations$"):
+        older_nominations = list(get_nominations(section))
+    return nominations, older_nominations
+
+
+def get_nominations(section: mwp.wikicode.Wikicode) -> Iterable[str]:
+    for t in section.filter_templates(
+        matches="Wikipedia:Featured article candidates/.*/archive\d+"
+    ):
+        yield str(t.name)
 
 
 def build_nomination(nom_page: Page) -> Nomination:
