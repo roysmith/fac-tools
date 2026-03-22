@@ -103,7 +103,7 @@ def build_nomination(nom_page: Page) -> Nomination:
     revs = list(nom_page.revisions(total=1, starttime=last_timestamp, content=True))
     text = revs[0].text
     fac_revisions = [Revision(r.timestamp, r.user) for r in pwb_revisions]
-    return Nomination(mwp.parse(text), nom_page.title(), fac_revisions)
+    return Nomination.build(text, nom_page.title(), fac_revisions)
 
 
 def plural(n: int, singular: str, plural: str) -> str:
