@@ -1,7 +1,6 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 import json
 from pathlib import Path
-from unittest.mock import patch
 
 import mwparserfromhell as mwp
 from mwparserfromhell.wikicode import Wikicode
@@ -66,9 +65,7 @@ def test_title_raises_with_missing_template():
         nom.title()
 
 
-@patch("fac_tools.nomination.datetime")
-def test_age(mock_datetime):
-    mock_datetime.utcnow.return_value = datetime(2026, 3, 10)
+def test_creation_time():
     nom = Nomination.build(
         "some random text",
         "archive",
@@ -78,18 +75,16 @@ def test_age(mock_datetime):
             Revision(datetime(2026, 3, 1), "user1"),
         ],
     )
-    assert nom.age() == timedelta(days=9)
+    assert nom.creation_time() == datetime(2026, 3, 1)
 
 
-def test_age_raises_with_no_revisions():
+def test_creation_time_raises_with_no_revisions():
     nom = Nomination.build("some random text", "archive", [])
     with pytest.raises(ValueError):
-        nom.age()
+        nom.creation_time()
 
 
-@patch("fac_tools.nomination.datetime")
-def test_active(mock_datetime):
-    mock_datetime.utcnow.return_value = datetime(2026, 3, 10)
+def test_last_edit_time():
     nom = Nomination.build(
         "some random text",
         "archive",
@@ -99,13 +94,13 @@ def test_active(mock_datetime):
             Revision(datetime(2026, 3, 1), "user1"),
         ],
     )
-    assert nom.active() == timedelta(days=7)
+    assert nom.last_edit_time() == datetime(2026, 3, 3)
 
 
-def test_active_raises_with_no_revisions():
+def test_last_edit_time_raises_with_no_revisions():
     nom = Nomination.build("some random text", "archive", [])
     with pytest.raises(ValueError):
-        nom.active()
+        nom.last_edit_time()
 
 
 def test_nominators_with_one(fac):

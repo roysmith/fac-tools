@@ -1,5 +1,6 @@
 from argparse import ArgumentParser, BooleanOptionalAction
 from collections.abc import Iterable
+from datetime import datetime
 from io import StringIO
 from time import sleep
 
@@ -73,6 +74,9 @@ def process_section(nominations: list[Nomination], buffer: StringIO):
 
 
 def process_nomination(nom: Nomination, buffer: StringIO):
+    now = datetime.utcnow()
+    age = nom.creation_time() - now
+    active = nom.last_edit_time() - now
     buffer.write(f"* ")
     buffer.write(f"<big>[[{nom.title()}]]</big>")
     buffer.write(f" (")
@@ -80,9 +84,9 @@ def process_nomination(nom: Nomination, buffer: StringIO):
     if nom.archive_number() != 1:
         buffer.write(f": {humanize.ordinal(nom.archive_number())}")
     buffer.write(f"{{{{cdot}}}}")
-    buffer.write(f"{humanize.naturaldelta(nom.age())} old")
+    buffer.write(f"{humanize.naturaldelta(age)} old")
     buffer.write(f"{{{{cdot}}}}")
-    buffer.write(f"Active {humanize.naturaldelta(nom.active())} ago")
+    buffer.write(f"Active {humanize.naturaldelta(active)} ago")
     buffer.write(f"{{{{cdot}}}}")
     buffer.write(f"{plural(len(nom.nominators()), 'nominator', 'nominators')}")
     buffer.write(f"{{{{cdot}}}}")

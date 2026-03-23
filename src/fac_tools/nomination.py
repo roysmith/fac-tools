@@ -1,6 +1,6 @@
 from __future__ import annotations
 from dataclasses import dataclass, field
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 import re
 
@@ -54,25 +54,17 @@ class Nomination:
             )
         return templates[0].get(1).value
 
-    def age(self) -> timedelta:
-        """Return the age of this nomination.  Assuming the oldest revision
-        is in the past, this will be positive.
-        """
+    def creation_time(self) -> datetime:
+        "Return the time this nomination was created."
         if self.revisions:
-            oldest_timestamp = self.revisions[-1].timestamp
-            now = datetime.utcnow()
-            return now - oldest_timestamp
+            return self.revisions[-1].timestamp
         else:
             raise ValueError("nomination has no revisions")
 
-    def active(self) -> timedelta:
-        """Return the time since this nomination was last edited.  Assuming
-        the newest revision is in the past, this will be positive.
-        """
+    def last_edit_time(self) -> datetime:
+        "Return the time this nomination was last edited."
         if self.revisions:
-            newest_timestamp = self.revisions[0].timestamp
-            now = datetime.utcnow()
-            return now - newest_timestamp
+            return self.revisions[0].timestamp
         else:
             raise ValueError("nomination has no revisions")
 
