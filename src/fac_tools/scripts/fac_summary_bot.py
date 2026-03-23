@@ -50,6 +50,8 @@ def main():
 def process_index():
     index_page = Page(site, "Wikipedia:Featured article candidates")
     buffer = StringIO()
+    buffer.write(f"__NOTOC__\n")
+    buffer.write(f"{{{{notice|Please don't edit this page manually!}}}}\n")
 
     for section_name in ["Nominations", "Older nominations"]:
         nominations = find_noms_in_section(index_page, section_name)
@@ -66,29 +68,27 @@ def process_index():
 
 
 def process_section(nominations: list[Nomination], buffer: StringIO):
+    now = datetime.utcnow()
     for n in nominations:
         if args.debug:
             print(n)
         nom = build_nomination(Page(site, n))
-        process_nomination(nom, buffer)
+        process_nomination(nom, now, buffer)
 
 
-def process_nomination(nom: Nomination, buffer: StringIO):
-    now = datetime.utcnow()
+def process_nomination(nom: Nomination, now: datetime, buffer: StringIO):
+    # Isn't this why jinja templates were invented?
     age = nom.creation_time() - now
     active = nom.last_edit_time() - now
-    buffer.write(f"* ")
-    buffer.write(f"<big>[[{nom.title()}]]</big>")
-    buffer.write(f" (")
-    buffer.write(f"[[{nom.nomination}|nomination]]")
+    buffer.write(f"<big>'''[[{nom.title()}]]'''</big>")
+    buffer.write(f" ([[{nom.nomination}|nomination]]")
     if nom.archive_number() != 1:
         buffer.write(f": {humanize.ordinal(nom.archive_number())}")
+    buffer.write(f")\n")
+    buffer.write(f"* {humanize.naturaldelta(age)} old")
     buffer.write(f"{{{{cdot}}}}")
-    buffer.write(f"{humanize.naturaldelta(age)} old")
-    buffer.write(f"{{{{cdot}}}}")
-    buffer.write(f"Active {humanize.naturaldelta(active)} ago")
-    buffer.write(f"{{{{cdot}}}}")
-    buffer.write(f"{plural(len(nom.nominators()), 'nominator', 'nominators')}")
+    buffer.write(f"Active {humanize.naturaldelta(active)} ago\n")
+    buffer.write(f"* {plural(len(nom.nominators()), 'nominator', 'nominators')}")
     buffer.write(f"{{{{cdot}}}}")
     buffer.write(f"{plural(len(nom.editors()), 'participant', 'participants')}")
     buffer.write(f"{{{{cdot}}}}")
