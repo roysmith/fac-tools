@@ -20,6 +20,5 @@ dependencies = [
 ]
 
 [project.scripts]
-fac-summary-bot = "scripts.fac_summary_bot:main"
-get-fac = "scripts.get_fac:main"
-
+fac-summary-bot = "fac_tools.scripts.fac_summary_bot:main"
+get-fac = "fac_tools.scripts.get_fac:main"
