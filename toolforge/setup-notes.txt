@@ -1,6 +1,8 @@
 On bastion:
 * Make sure you have a deploy key installed on github
-* Create a $HOME/user-config.py, make sure it is mode 0600.
+* Copy sample-user-config.py to $HOME/user-config.py
+* Make user-config.py mode 0600
+* Update user-config.py with appropriate OAUTH credentials
 
 $ become fac-summary-bot
 $ git clone git@github.com:roysmith/fac-tools.git
@@ -11,8 +13,6 @@ $ python3 -m venv --prompt=fac-summary-bot venv
 $ . venv/bin/activate
 $ cd fac-tools
 $ pip install .
-
-
 
 Commands:
 * toolforge webservice python3.11 shell
