@@ -1,0 +1,17 @@
+On bastion:
+(Make sure you have a deploy key installed on github)
+$ become fac-summary-bot
+$ git clone git@github.com:roysmith/fac-tools.git
+
+On krb backend
+$ cd $HOME
+$ python3 -m venv --prompt=fac-summary-bot venv
+$ . venv/bin/activate
+$ cd fac-tools
+$ pip install .
+
+
+
+Commands:
+* toolforge webservice python3.11 shell
+* toolforge jobs run bot --image python3.11 --command fac-tools/toolforge/bot.sh
