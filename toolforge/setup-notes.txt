@@ -1,5 +1,7 @@
 On bastion:
-(Make sure you have a deploy key installed on github)
+* Make sure you have a deploy key installed on github
+* Create a $HOME/user-config.py, make sure it is mode 0600.
+
 $ become fac-summary-bot
 $ git clone git@github.com:roysmith/fac-tools.git
 
