@@ -77,14 +77,21 @@ def process_section(nominations: list[Nomination], buffer: StringIO):
 
 
 def process_nomination(nom: Nomination, now: datetime, buffer: StringIO):
-    # Isn't this why jinja templates were invented?
     age = nom.creation_time() - now
     active = nom.last_edit_time() - now
+    article = Page(site, nom.title())
+    description = get_short_description(article)
+
+    # Isn't this why jinja templates were invented?
     buffer.write(f"<big>'''[[{nom.title()}]]'''</big>")
     buffer.write(f" ([[{nom.nomination}|nomination]]")
     if nom.archive_number() != 1:
         buffer.write(f": {humanize.ordinal(nom.archive_number())}")
     buffer.write(f")\n")
+    if description:
+        buffer.write(f"* ''{description}''\n")
+    else:
+        buffer.write(f"* no {{{{t|short description}}}} found\n")
     buffer.write(f"* {humanize.naturaldelta(age)} old")
     buffer.write(f"{{{{cdot}}}}")
     buffer.write(f"Active {humanize.naturaldelta(active)} ago\n")
@@ -94,8 +101,7 @@ def process_nomination(nom: Nomination, now: datetime, buffer: StringIO):
     buffer.write(f"{{{{cdot}}}}")
     buffer.write(f"{plural(nom.support_count(), 'support', 'supports')}")
     buffer.write(f"{{{{cdot}}}}")
-    buffer.write(f"{plural(nom.oppose_count(), 'oppose', 'opposes')}")
-    buffer.write(f")\n")
+    buffer.write(f"{plural(nom.oppose_count(), 'oppose', 'opposes')}\n")
 
 
 def find_noms_in_section(index_page: Page, section: str) -> Iterable[str]:
@@ -124,6 +130,12 @@ def build_nomination(nom_page: Page) -> Nomination:
 
 def plural(n: int, singular: str, plural: str) -> str:
     return f"{n} {singular if n == 1 else plural}"
+
+
+def get_short_description(article: Page) -> str:
+    wikicode = mwp.parse(article.text)
+    templates = wikicode.filter_templates(matches="short description")
+    return templates and templates[0].get(1, "")
 
 
 if __name__ == "__main__":
