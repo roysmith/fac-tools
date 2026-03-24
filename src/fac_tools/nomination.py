@@ -11,6 +11,10 @@ from mwparserfromhell.nodes import Tag, Node
 from .revision import Revision
 
 
+class FAToolsError(ValueError):
+    pass
+
+
 @dataclass(frozen=True)
 class Nomination:
     wikicode: Wikicode
@@ -49,7 +53,7 @@ class Nomination:
     def title(self) -> str:
         templates = self.wikicode.filter_templates(matches="Featured article tools")
         if len(templates) != 1:
-            raise RuntimeError(
+            raise FAToolsError(
                 f"There should be exactly 1 {{Featured article tools}}, found {len(templates)}"
             )
         return templates[0].get(1).value

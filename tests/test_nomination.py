@@ -6,7 +6,7 @@ import mwparserfromhell as mwp
 from mwparserfromhell.wikicode import Wikicode
 import pytest
 
-from fac_tools import Nomination, Revision
+from fac_tools import Nomination, Revision, FAToolsError
 
 
 @pytest.fixture
@@ -61,7 +61,7 @@ def test_title(fac):
 
 def test_title_raises_with_missing_template():
     nom = Nomination.build("I am broken", "archive", [])
-    with pytest.raises(RuntimeError):
+    with pytest.raises(FAToolsError):
         nom.title()
 
 
