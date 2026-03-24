@@ -10,6 +10,9 @@ from pywikibot import Site, Page
 
 from fac_tools import Nomination, Revision
 
+INDEX_PAGE = "Wikipedia:Featured article candidates"
+SUMMARY_PAGE = "User:FACSummaryBot/summary"
+
 # Command-line args, available globally
 args = None
 site = None
@@ -48,7 +51,7 @@ def main():
 
 
 def process_index():
-    index_page = Page(site, "Wikipedia:Featured article candidates")
+    index_page = Page(site, INDEX_PAGE)
     buffer = StringIO()
     buffer.write(f"__NOTOC__\n")
     buffer.write(f"{{{{notice|Please don't edit this page manually!}}}}\n")
@@ -62,7 +65,7 @@ def process_index():
     if args.dry_run:
         print(text)
     else:
-        summary_page = Page(site, "User:FACSummaryBot/summary")
+        summary_page = Page(site, SUMMARY_PAGE)
         summary_page.text = text
         summary_page.save()
 
