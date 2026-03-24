@@ -11,7 +11,9 @@ license = "MIT"
 license-files = ["LICENSE"]
 dependencies = [
     "black",
+    "bs4",
     "humanize",
+    "more-itertools",
     "mwparserfromhell",
     "pytest",
     "pytest-datadir",
