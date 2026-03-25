@@ -4,6 +4,8 @@ from datetime import datetime
 from io import StringIO
 import requests
 from time import sleep
+import urllib.parse
+
 
 from bs4 import BeautifulSoup
 import humanize
@@ -15,6 +17,7 @@ from fac_tools import Nomination, Revision, FAToolsError
 
 INDEX_PAGE = "Wikipedia:Featured article candidates"
 SUMMARY_PAGE = "User:FACSummaryBot/summary"
+REQUEST_HEADERS = {"user-agent": "fac-tools (RoySmith)"}
 
 # Command-line args, available globally
 args = None
@@ -95,9 +98,10 @@ def process_nomination(nom: Nomination, now: datetime, buffer: StringIO):
         return
     description = get_short_description(article)
     url = article.full_url()
-    response = requests.get(url, headers={"user-agent": "fac-tools (RoySmith)"})
-    size = get_prose_size(response.text)
-    rounded_size = humanize.intcomma(round(size / 1000.0) * 1000)
+    response = requests.get(url, headers=REQUEST_HEADERS)
+    response.raise_for_status()
+    size = get_prose_size(article)
+    rounded_size = humanize.intcomma(round(size / 100.0) * 100)
 
     # Isn't this why jinja templates were invented?
     buffer.write(f"<big>'''[[{nom.title()}]]'''</big>")
@@ -157,19 +161,17 @@ def get_short_description(article: Page) -> str:
     return templates and templates[0].get(1, "")
 
 
-def get_prose_size(text: str) -> int:
-    """Return an estimate of the readable prose size of the
-    page.  In theory, this should produce the same value as
-    [[Wikipedia:Prosesize]] but it's not clear exactly what
-    algorithm that uses, so this is only going to be roughly
-    the same.
-    """
-    soup = BeautifulSoup(text, features="html.parser")
-    paragraphs = soup.select("#mw-content-text p")
-    strings = flatten(p.stripped_strings for p in paragraphs)
-    tokens = flatten(s.split() for s in strings)
-    words = [t for t in tokens if t.isalpha()]
-    return len(words)
+def get_prose_size(article: Page) -> int:
+    "Return the readable prose size of the page."
+    site = article.site
+    hostname = site.family.hostname(site.code)
+    url = f"https://prosesize.toolforge.org/api/{hostname}/{urllib.parse.quote(article.title())}"
+    response = requests.get(url, headers=REQUEST_HEADERS)
+    response.raise_for_status()
+    data = response.json()
+    print(url)
+    print(data)
+    return data["word_count"]
 
 
 if __name__ == "__main__":
