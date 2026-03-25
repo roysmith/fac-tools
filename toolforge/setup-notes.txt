@@ -17,3 +17,6 @@ $ pip install .
 Commands:
 * toolforge webservice python3.11 shell
 * toolforge jobs run bot --image python3.11 --command fac-tools/toolforge/bot.sh
+
+To set up cron job:
+* toolforge jobs run fac-summary-bot --command $HOME/fac-tools/toolforge/bot.sh --image python3.11  --schedule "*/15 * * * *" --timeout 300
