@@ -7,13 +7,14 @@ from time import sleep
 import urllib.parse
 
 
-from bs4 import BeautifulSoup
+# from bs4 import BeautifulSoup
 import humanize
-from more_itertools import flatten
+
+# from more_itertools import flatten
 import mwparserfromhell as mwp
 from pywikibot import Site, Page
 
-from fac_tools import Nomination, Revision, FAToolsError
+from fac_tools import Nomination, Revision, Index, FAToolsError
 
 INDEX_PAGE = "Wikipedia:Featured article candidates"
 SUMMARY_PAGE = "User:FACSummaryBot/summary"
@@ -58,6 +59,7 @@ def main():
 
 def process_index():
     index_page = Page(site, INDEX_PAGE)
+    index = Index.build(index_page.text)
     buffer = StringIO()
     buffer.write(f"__NOTOC__\n")
     buffer.write(f"{{{{notice|Please don't edit this page manually!}}}}\n")
@@ -169,8 +171,6 @@ def get_prose_size(article: Page) -> int:
     response = requests.get(url, headers=REQUEST_HEADERS)
     response.raise_for_status()
     data = response.json()
-    print(url)
-    print(data)
     return data["word_count"]
 
 

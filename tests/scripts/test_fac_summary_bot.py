@@ -7,6 +7,7 @@ import pytest
 from fac_tools.scripts import fac_summary_bot
 
 
+@pytest.mark.skip("no longer computed internally")
 @pytest.mark.parametrize(
     "html,expected",
     [
