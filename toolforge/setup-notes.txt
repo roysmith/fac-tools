@@ -22,7 +22,7 @@ To set up cron job:
 * toolforge jobs run fac-summary-bot --command $HOME/fac-tools/toolforge/bot.sh --image python3.11  --schedule "*/15 * * * *" --timeout 300
 
 To deploy a new version:
-* Connect to bastion host with ssh.
+* Connect to fac-tools@bastion host with ssh.
 * become fac-summary-bot
 * cd fac-tools
 * git pull
