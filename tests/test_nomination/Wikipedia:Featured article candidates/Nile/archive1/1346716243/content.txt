@@ -1,0 +1,462 @@
+===[[Nile]]===
+
+<noinclude>{{pagelinks|Nile}}
+{{hatnote|As of <!--do not subst-->{{TODAY}}, {{CURRENTTIME}} (UTC), this page is active and open for discussion. An FAC coordinator will be responsible for closing the nomination.}}
+{{Featured article tools|1=Nile}}</noinclude>
+
+:<small style="font-style:italic;">Nominator(s): [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 22:08, 19 March 2026 (UTC)</small>
+
+The [[Nile River]]{{snd}}Longest river in the world, lifeblood of the [[Ancient Egypt|Ancient Egyptian  civilization]], home to a thousand cultures.   This is Level 3 [[WP:Vital article|Vital Article]], and currently stands at 9,986 prose words.   Thanks to all who assisted (in no particular order):  {{u|MSincccc}} (peer review & copy-editing);  {{u| Amitchell125}} (GA review and map creation);  {{u|Llewee}} (peer review); {{u|YuniToumei}} (WP:RX assistance). [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 22:08, 19 March 2026 (UTC)
+====HurricaneZeta====
+First thing I noticed is that the lead image is grainy. Is there a better image to put in the lead? It's also not particularly representative - the one for [[Amazon River]] is a high-quality satellite image so something similar would be better in my opinion. [[User:HurricaneZeta|<span style="background-color:#ffd98c; color:black">'''Hurricane'''</span>]][[User talk:HurricaneZeta|<span style="background-color:#ffd98c; color:black">'''Zeta'''</span>]]<sup>[[Special:Contributions/HurricaneZeta|C]]</sup> 22:38, 19 March 2026 (UTC)
+
+:I'll look for a less grainy photo.  I avoided satellite images in the InfoBox because the article body text already has lots of "birds eye view" images/maps and they were getting repetitive.  There are 100's of images in Commons, I should be able to find a better one. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 22:42, 19 March 2026 (UTC)
+:I replaced the InfoBox image with [https://commons.wikimedia.org/wiki/File:Beautiful_nature_along_Nile_River_01.jpg this Commons image], which is 3k x 2k pixels.  I tried a satellite image, but they all look really ugly in the InfoBox because the Nile satellite pics are generally very tall & skinny images (because the  river runs N-S).  The Amazon is different: the Amazon basin's rectangular outline is a nice 3x2 (wider than tall) so is great for an InfoBox.   I could crop a Nile sat image to show only the delta, but the article already has plenty of images & text about Egypt (rightfully so) but I think the InfoBox is a good place to remind readers that the Nile goes way beyond Egypt and is green & lush in most of the southern half. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 22:52, 19 March 2026 (UTC)
+::The image certainly looks good! A nitpick tho: "The beauty of river nile, as you progress towards Murchison falls" for the image's description on Commons doesn't actually describe the image. '''[[User:Icepinner|Icepinner]]''' ([[User talk:Icepinner|Come to Hakurei Shrine!]]) 14:08, 20 March 2026 (UTC)
+:::Thanks for pointing that out.  I improved the image description in Commons so it now says ''"A view of Murchison Falls on the Nile River, looking east.  This portion of the Nile in Uganda, between Lake Victoria and Lake Albert, is called the Victoria Nile".  '' Also:  Thanks for your great comments in the Peer Review, much appreciated. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 14:53, 20 March 2026 (UTC)
+:I rather disagree with this new choice of image; I think we should seek an image that better represents the Nile across its full course, and (as infobox photos are primarily for identification), fits with what people would expect the Nile to be. I searched through Commons and found some possible candidates:
+* [[Commons:File:River Nile at Karima (3) (33706717470).jpg]]
+::I think this gets across the pure size of the river well, it's very well-composed, and it shows a fairly typical riverside environment
+*[[Commons:File:Nile Cataracts 03.jpg]]
+::The 1st Cataract is one of the most important spots on the river, and this is a good wide view that shows both the size of the river and its importance to human settlement
+*[[Commons:File:Nile in Luxor.jpg]]
+::Similar to the former, but with better resolution, albeit not at quite as important a location
+I think any of these would be nice. (And again, thank you so much for your work on this article!)<small> [[User:Generalissima|Generalissima]] ([[User talk:Generalissima|talk]]) (it/she) </small>  05:58, 21 March 2026 (UTC)
+
+:@[[User:Generalissima|Generalissima]] - Thanks for the feedback on the InfoBox image.   Those three images you found are okay, but the sky seems a bit overcast & hazy in all three.  Unfortunately, Wiki Commons does not have many nice pictures of the Nile that are hi-res, and capture the essence of the Nile, and have good composition.  I've put together  [[User:Noleander/sandboxNile| this image gallery]] of about 11 images (including the 3 you provided, and the current image, and the one that was in the InfoBox before that).  Can you glance at that gallery and see if any of the other ones are satisfactory? [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 15:15, 21 March 2026 (UTC)
+::The_Nile_River_flows_into_the_Mediterranean_Sea_(iss071e405499).jpg, Nil 25.jpg would work well if we want to go for a satellite picture. I searched through Flickr, and was able to find one more that might be useable (though I think we'd want to crop to the left side of the picture for an infobox image); [[Commons:File:Nile 3rd Cataract Sudan pano.jpg]] <small> [[User:Generalissima|Generalissima]] ([[User talk:Generalissima|talk]]) (it/she) </small>  15:33, 21 March 2026 (UTC)
+:::Oh, I'm liking [[Commons:File:Nile 3rd Cataract Sudan pano.jpg]] ... I'll crop that and upload the cropped version to Commons (I have not yet found a way to perform cropping within the confines of the InfoBox parameters).   I'll put it into the InfoBox soon. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 15:44, 21 March 2026 (UTC)
+:::I made three cropped versions of the Flickr image ... left, middle, and right.  I put them into [[User:Noleander/sandboxNile]] so you can see all three.  I picked one at random and put it into the [[Nile]] InfoBox.  Let me know which one you think is best. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 16:22, 21 March 2026 (UTC)
+::::I really like [[:File:The Nile River flows into the Mediterranean Sea (iss071e405499).jpg]] for a satellite image. I think the one in the infobox now is the best option for a ground view, though [[User:HurricaneZeta|<span style="background-color:#ffd98c; color:black">'''Hurricane'''</span>]][[User talk:HurricaneZeta|<span style="background-color:#ffd98c; color:black">'''Zeta'''</span>]]<sup>[[Special:Contributions/HurricaneZeta|C]]</sup> 17:57, 21 March 2026 (UTC)
+:::::There's still room in the article for more images ... so both could be included. The satellite image might be tricky in the InfoBox because a lengthy caption might be required to distinguish the Nile from the Red Sea  (for readers who are not savvy about geography) e.g.  ''"The Nile river (the dark, narrow, horizontal, meandering line in the bottom portion of the image)"'' [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 18:25, 21 March 2026 (UTC)
+:::::I put that satellite image into the article at [[Nile#Prehistory]]. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 18:31, 21 March 2026 (UTC)
+
+====MSincccc====
+*Thanks for bringing yet another vital article to FAC. I will be leaving comments shortly. [[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 03:57, 20 March 2026 (UTC)
+; Lead
+*None here, except a few places in the article where I spotted double spaces. [[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 05:19, 20 March 2026 (UTC)
+; Names and etymology 
+*"The English name of the Blue Nile" → "The English name 'Blue Nile'"
+::Done.  Although I used double quotes per [[MOS:WORDSASWORDS]], because the article is using  italics for foreign words;  single quotes for English gloss of foreign words; double quotes for words-as-words.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 15:03, 20 March 2026 (UTC)
+*You could link to [[Lake Victoria]], [[Lake Kyoga]] and [[Lake Albert (Africa)]] on first mention in the body.
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 15:03, 20 March 2026 (UTC)
+*"as they carried sediment from upriver" → "as they carry sediment from upriver"
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 15:03, 20 March 2026 (UTC)
+*{{green|downstream from confluence of Blue Nile and White Nile}} - "the confluence"?
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 15:03, 20 March 2026 (UTC)
+[[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 05:19, 20 March 2026 (UTC)
+; Geography 
+*"the course from there to Lake Albert" → "the stretch from there ..."  More idiomatic in this context?
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:08, 21 March 2026 (UTC)
+*"a tributary flowing from the west" → "a tributary from the west"
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:08, 21 March 2026 (UTC)
+*"This confluence happens in Lake No."  - How about "occurs" in place of "happens"?
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:08, 21 March 2026 (UTC)
+*{{green|Where the White Nile merges with the Blue Nile they are noticeably distinct colors.}} - You ''could'' insert a comma before "they are".
+:: Done.  Not 100% sure it is better, but it is not worse. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:08, 21 March 2026 (UTC)
+*"second largest" → "second-largest"
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:08, 21 March 2026 (UTC)
+*"which then follows a large S-shape curve" → "which then follows a large S-shaped curve"
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:08, 21 March 2026 (UTC)
+[[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 14:59, 21 March 2026 (UTC)
+; Sources 
+*{{green|The source of the Blue Nile tributary is near the town of Gish Abay, south of Lake Tana.}} - How about merging it into any of the previous paragraphs since it is only a single sentence?
+::That section identifies five distinct sources:  one per paragraph.  Merging two paragraphs would make it harder for readers to grasp the the sources are all separate. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:19, 21 March 2026 (UTC)
+*{{green|The distance was determined from satellite imagery, and was measured}}
+**Could we avoid mentioning "was" twice?
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:19, 21 March 2026 (UTC)
+*"than its inflowing rivers" → "than its tributaries"
+::    Changed to {{blue|...  than the rivers that flow into the lake.}} I just looked up the definition of "tributary", and you are correct,  it can mean rivers flowing into a lake.  But I've never seen it used that way before (I've only seen it used to mean a smaller river that flows into a larger river).  So, I'm reluctant to employ that (apparently) rare usage. Google says "influent" would work, but that is a super rare word. Let me know if the new blue text is not satisfactory.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:19, 21 March 2026 (UTC)  
+
+[[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 16:48, 21 March 2026 (UTC)
+; Hydrology 
+*{{green|The waters of the Blue Nile are so substantial during the summer and autumn, that the White Nile backs-up during this time at the confluence.}} - Both British and American English would use "backs up". Also, you ''could'' drop after "autumn". 
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 14:04, 22 March 2026 (UTC)
+; Ecology 
+*{{green|industrial pollutants and sewage; ships contribute pollutants to the waters;}} - You ''could'' avoid repeating "pollutants" in close proximity.
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 14:04, 22 March 2026 (UTC)
+*{{green|These arid conditions led to famines and social disruption, and also to increased environmental degradation.}} - You ''could'' drop "also to".
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 14:04, 22 March 2026 (UTC)
+*"increase in frequency and severity of both dryness and drought" → "increase in the frequency and severity of droughts"
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 14:04, 22 March 2026 (UTC)
+
+[[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 05:12, 22 March 2026 (UTC)
+; Geography 
+*The article uses both "Bahr al Ghazal" and "Bahr el Ghazal" - how about using only one?
+*"eventually producing the current river" → "eventually producing the current form of the river" - clearer?
+*"rivers in Ethiopian and Ugandan highlands" → "rivers in the Ethiopian and Ugandan highlands" -adds the missing article
+*{{green|where the modern Lake Albert and Lake Edwards are.}} - Isn't it "Lake Edward" or am I mistaken?
+*"the Sea completely evaporated" → "the sea completely evaporated"
+*{{green|After the Strait of Gibraltar reopened, the Sea refilled}}- same as the previous suggestion
+*"Lake Victoria roughly assumed its modern shape" → "Lake Victoria assumed roughly its modern shape"
+*"tilted northwards" → "tilted northward" 
+::: Done ... all of the above. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 23:47, 22 March 2026 (UTC)
+
+[[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 16:33, 22 March 2026 (UTC)
+; Geological history
+*"and start forming Lake Victoria" → "and to start forming Lake Victoria"
+; Human history 
+*"the Egyptian's need" → "the Egyptians' need"
+*"also were within its realm" → "were also within its realm"
+*"between 1613 to 1618" → "between 1613 and 1618"
+*“the furthermost source” → “the farthest source” - more idiomatic?
+
+[[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 04:49, 23 March 2026 (UTC)
+; Water politics in the modern era
+*"water projects to enhance the production of the cotton industry" → "water projects to enhance cotton production"
+*"an agreement between Egypt and Anglo-Egyptian Sudan was formed" → "an agreement between Egypt and Anglo-Egyptian Sudan was reached"
+- more idiomatic?
+*"dialog" →"dialogue"
+*{{green|quality of life of their populace}} - How about using "population" in place of "populace"?
+*"kilowatt hours" → "kilowatt-hours"
+*Is there any way [[water politics]] could be linked in this section? No worries if not.
+:: Did all of the above except one:  Did not add a link to [[water politics]].  I searched and could not find a decent place to put it. The [[Nile#Water politics in the modern era]] section already begins with a "further" template that directs the reader to [[Water politics in the Nile Basin]], which should satisfy the same goal. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:44, 23 March 2026 (UTC)
+[[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 16:59, 23 March 2026 (UTC)
+; General 
+*You could also briefly mention that the Nile is a [[transboundary river]].
+; Economy (Agriculture)
+*"primarily" → "mainly" - More common in American English.
+*{{green|Much of the irrigated land is within the Gezira Scheme, an extensive irrigation project initiated in the 1920s}} -How about "started" in place of "initiated" for simplicity?
+*{{green|The primary crops in Sudan are peanuts, cotton, sesame, sugarcane, and sorghum.}} -You ''could'' link to some of the crops. 
+*{{green|and Khashm Al-Qirbah Dam}}- Is this the same as [[Khashm el-Girba Dam]]? 
+; Economy (Fisheries)
+*"which is more than half of the total fresh water yield from the entire African continent" → "which is more than half of the total freshwater yield from all of Africa"- More idiomatic?
+*"Fish farming is performed at some places in the basin" → "Fish farming is carried out in some parts of the basin"- More idiomatic?
+::Did all of the preceding items except: Kept "primarily"  (vs "mainly"); and kept "from ... the African continent" because that particular usage is emphasizing fish caught in freshwater lakes (inside the continent) and excludes ocean fishing. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 14:19, 24 March 2026 (UTC)
+[[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 09:14, 24 March 2026 (UTC)
+; Economy (Hydropower)
+*"Nile River, but thereafter" → "Nile River, but thereafter,"
+; Economy (Transportation)
+*None here.
+; Economy (Tourism and recreation)
+*{{green|The Bandingilo National Park, near the White Nile, is in South Sudan.}}- This has already been mentioned in the previous sentence (South Sudan has the Boma National Park, Bandingilo National Park).
+:: Did the items above. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:32, 24 March 2026 (UTC)
+[[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 16:45, 24 March 2026 (UTC)
+; In culture (Art and literature)
+*None
+; In culture (Myth and religion)
+*You ''could'' link to [[cosmology]] and more specifically to [[Ancient Egyptian religion#Cosmology]], if it is possible to do so.
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 18:01, 25 March 2026 (UTC)
+*{{green|Isis was a major deity in the Egyptian religion who was strongly associated with the Nile River.}}- You ''could'' avoid "was" twice in the same sentence.
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 18:01, 25 March 2026 (UTC)
+<s>*"dated to first century BCE" → "dated to the first century BCE"</s>
+:: Thanks for doing that one. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 18:01, 25 March 2026 (UTC)
+[[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 04:57, 25 March 2026 (UTC)
+
+:; Bottom line 
+:*That's all from me. Thank you again for the article.
+:[[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 14:11, 25 March 2026 (UTC)
+:: {{yo|MSincccc}} - Thank-you very much for your assistance:  it tremendously improved the article. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]])
+:::Thank you. Good luck with the nomination; I’ll keep an eye on it in case anything else comes up. I will '''support''' it. [[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 03:36, 26 March 2026 (UTC)
+; Water politics in the modern era (Post-colonial era)
+*{{green|Egypt built the Aswan High Dam (completed 1970);...In 1960, Egypt started building the Aswan High Dam (completed in 1970) }}- Two consecutive paragraphs mention that the Dam was completed in 1970. You ''could'' drop it in one of the sentences. [[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 16:28, 28 March 2026 (UTC)
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:00, 28 March 2026 (UTC)
+; Prose
+*"Sennar Dam" has been linked on four out of five mentions in the article text. It ''could'' be delinked on one of the mentions.  [[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 16:34, 1 April 2026 (UTC)
+::Done. Eliminated all links but one (plus the link inside the River Route map, which is an independent template). [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:16, 1 April 2026 (UTC)
+; Economy 
+*{{green|along a narrow strip along the river banks}}
+**Could the repetition of "along" be avoided? [[User:MSincccc|MSincccc]] ([[User talk:MSincccc|talk]]) 12:39, 2 April 2026 (UTC)
+
+====UC====
+
+A very quick one for now:
+
+* {{green| the Arabic word النيل (romanized as 'Nil')}}: the Arabic has the definite article on it: it's pronounced "an-Nil". ''[[User:UndercoverClassicist|<b style="color:#7F007F">UndercoverClassicist</b>]]'' <sup>[[User talk:UndercoverClassicist|T]]·[[Special:Contributions/UndercoverClassicist|C]]</sup> 08:05, 21 March 2026 (UTC)
+
+::@[[User:UndercoverClassicist|UndercoverClassicist]] - Thanks for the feedback!  I changed the article to {{blue|In Egypt, its names use the Arabic word النيل (romanized as 'An Nil') in the forms Al-Nīl, Baḥr Al-Nīl or Nahr Al-Nīl.}}  I got the Arabic spelling from the Badawi source.   The Hurst source lists the three forms at the end of the sentence, which all start with "Al".  So, there is a now a mixture of "Al" and "An".  Is that a problem?  Would it be simpler to remove the definite article from the Arabic? [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 15:32, 21 March 2026 (UTC)
+:::Out of my expertise, I'm afraid -- I think you'd be wise to consult someone who speaks Egyptian Arabic! From what I can tell, the "proper" transcription is always "al-Nil" etc, but Arabic speakers would assimilate the l to the n because n is a "[[Sun and moon letters|sun letter]]". So it's pronounced "an-Nil" in all of these contexts, but may be written in Romanisation as "al-", (I would guess) particularly in proper nouns where the Romanisation may be more conservative. Compare [[El Alamein]], which reflects the Egpytian pronounciation even though the article remains "Al" in "proper" transcription. ''[[User:UndercoverClassicist|<b style="color:#7F007F">UndercoverClassicist</b>]]'' <sup>[[User talk:UndercoverClassicist|T]]·[[Special:Contributions/UndercoverClassicist|C]]</sup> 16:27, 21 March 2026 (UTC)
+::::Alright, thanks for the insightful information.  I'll figure out a sensible path forward. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 16:31, 21 March 2026 (UTC)
+:::::I changed it to follow the [[Harold Edwin Hurst]] source: I removed the Arabic spelling, and left the three romanized versions; thus avoiding the definite article issue altogether. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:26, 21 March 2026 (UTC)
+
+====From Tim riley====
+Drive-by – or perhaps in this case barge-by – comment: the article is mostly written in American but an English spelling has crept in with "500 metres". I'll look in again if time permits, but it's a ''very'' long article – 10,000 words! '''<span style="font-family:Trebuchet MS;">[[User:Tim riley|<span style="color:# 660066">Tim riley</span>]][[User talk:Tim riley|<span style="color:#848484"> talk</span>]]</span>''' 14:40, 21 March 2026 (UTC)
+
+:@[[User:Tim riley|Tim riley]] - Thanks for catching the spelling issue; I have fixed it.  Article size: It was up to 11,000 words, but I struggled mightily to get it down to 10,000.  It is the longest river in the world, after all :-)   <small>And a Level 3 Vital Article.</small>  Any additional feedback you can provide on the article would be appreciated.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 15:36, 21 March 2026 (UTC)
+:@[[User:Tim riley|Tim riley]] - FYI, I've trimmed the article - now down to 9,572  words. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 02:40, 23 March 2026 (UTC)
+
+==== {{u|Andrew Davidson}} ====
+=====Length=====
+{{tq|At {{convert|7,088| km|mi|sp=us}} long, it is the [[longest river in the world]], ...|q=y}}
+
+There are a couple of issues with this.  Firstly, the length seems suspiciously precise but isn't dated.  Per [[Heraclitus]], a river is constantly changing and so this measurement should be attributed and dated.  Note that other sources do not agree on this figure.  For example, [https://www.britannica.com/place/Nile-River Britannica] gives the figure as 6,650 km.
+
+Secondly, the linked [[longest river in the world]] explains that {{tq|the length measurements of many rivers are only approximations (see also [[coastline paradox]]). In particular, there seems to exist disagreement as to whether the [[Nile]] or the [[Amazon River|Amazon]] is the world's longest river.|q=y}}  See [https://www.britannica.com/story/how-long-is-the-amazon-river Britannica] for an account of the issue.  The statement here seems too definite and should explain that the claim is disputed.
+
+[[user:Andrew Davidson|Andrew]]🐉([[user talk:Andrew Davidson|talk]]) 22:30, 24 March 2026 (UTC)
+
+:Thanks for the detailed feedback ... much appreciated.  The article used to have a sentence covering the subtleties of the length record, but it was trimmed in an attempt to get the article down to a reasonable size.  I'll restore it (maybe as a footnote) and also attach a year to the measurement (it was 2008).  As you say, measuring rivers is a tricky business, and the values change over time, and will continue to change in the future.  As for the word "longest", that statement is found in several reliable, academic sources.  The Britannica source (above) is kind of a blog, and ends with'' "This headline-making news was met with skepticism by many, especially since the Brazilian study was not published, which raised questions about the researchers’ methodology."''  I'm not aware of any recent academic sources that measured both the Amazon and the Nile, and found the Amazon longer ... but I'll double check that. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 22:53, 24 March 2026 (UTC)
+:I added the following footnote to the article (cited in three places, wherever the length is mentioned): 
+:: {{green|The 7,088 km length value for the Nile is based on the {{harvnb|Liu|2009}} study. This study measured ten rivers around the world using the same methodology: the length was measured along the centerline of the river using satellite imagery.  The imagery was collected during the years 1999 to 2002.{{sfn|Liu|2009}}  The lengths of all rivers vary over time, as the river changes course, sources are refined, deltas change size, or new measurement methodologies are developed.{{sfn|Liu|2009|p=80-81}}   The title of longest river is somewhat controversial.{{sfn|McCoy|2023}}  Sources which state that the Nile is the longest river include {{harvnb|Liu|2009}},  {{harvnb|Fierro|Nyer|2007|p=5-35}}, {{harvnb|Talbot|Williams  |2009|p=39}}, {{harvnb|Dumont |2009|p=1}}, and {{harvnb|Sutcliffe |2009|p=336}}. }} 
+:I did not put the date of the measurement into the body text, because it is nuanced: the paper was published in 2009, but the methodology relied on imagery from 1999-2002 ... so instead I put those years into the footnote.  
+:<br>
+:I considered adding other length values for the Nile (from other sources) but the values (6,800, 6,400, 6,500, etc) were outdated, vague, and never included a methodology.  In my judgement, the Liu 2009 source stands head and shoulders above other sources for the length value.   
+:<br>
+:I searched [[WP:TWL]] for any recent, academic source that states that the Nile is ''not ''is the longest river, but I could not find one. A google search produced a few results, but they were not peer-reviewed academic sources:  some were professors, but they were invariably non-peer-reviewed press releases, rather than reliable, academic journals. And they were potentially biased.  I have no skin in the game, and if anyone can find a recent, reliable, academic source that says that the Nile is not the longest,  I'll be happy to update the article accordingly.
+:<br>
+:Thanks again for the feedback on the article!  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:24, 25 March 2026 (UTC)
+
+:: Thanks for the detailed response.  I've just started reading through the article and so will comment further as and when I have more observations.  More anon. [[user:Andrew Davidson|Andrew]]🐉([[user talk:Andrew Davidson|talk]]) 10:12, 25 March 2026 (UTC)
+::::{{reflist-talk}}
+
+=====Templates=====
+As {{u|Noleander}} says that the size of the article was an issue, I've added the {{tl|section sizes}} template which may also help in reviewing the article's overall structure and balance.
+
+I also notice that there's a template requesting a map.  As the article has several maps, perhaps this is no longer needed?
+:Removed.  Thanks for catching that, I had forgotten about it. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 13:37, 25 March 2026 (UTC)
+
+[[user:Andrew Davidson|Andrew]]🐉([[user talk:Andrew Davidson|talk]]) 10:36, 25 March 2026 (UTC)
+
+====Airship====
+As always, these are suggestions, not demands; feel free to refuse with justification.
+
+;General
+*the capitalisation of "basin" is inconsistent throughout the article, especially when following "Nile"
+::Done.  Sources are split on whether to capitalize the "B", so I flipped a coin and went with capital "B".  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 13:49, 25 March 2026 (UTC)
+*I'm surprised that with the superfluity of available sources, Britannica still has to be cited? Especially with the confusing citation [[Harold Edwin Hurst]], 2025...
+:: Regarding [[Harold Edwin Hurst]]: he was the world's foremost Nile expert in the 20th century, and his works are still cited by Nile academics in the 21st century. He was the original author of the ''Britannica'' article{{snd}}which lends some weight to that article.  Although he has been dead for 48 years, so some of the ''Britannica'''s "Nile" article has probably been re-written by the co-authors. 
+
+::Reliability:  I used ''Britannica'' as a source reluctantly, and only as a last resort.  ''Britannica'' often states basic facts about the Nile that secondary sources do not state because they are so "obvious".    ''Britannica'' is used in this article only to support non-contentious material. 
+ 
+::Regarding the number of citations to the Hurst article: the  [[Nile#Geography]] section this article adopted Hurst's division of the Nile Basin into seven regions. So, the article necessarily cites him once or twice for each of the seven regions of the Basin, which quickly put the number of cites over ten.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 14:24, 25 March 2026 (UTC)
+*There are 2,500 words of footnotes, which seems excessive.
+::Agree.  I just reduced the footnotes from 2,625 words to 1,785 words (using Google Doc word counter). There were a large number of footnotes because a couple of months ago the  article grew to 11,000 prose words, and when I trimmed the article down to 9,500 words, most of that trimmed  material was pushed into footnotes.  The remaining footnotes are significant; but I can remove more, if necessary. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 14:51, 25 March 2026 (UTC) 
+
+;Lead and infobox
+*Think it would be useful to have a map in the infobox? Something like [[:File:Nile basin map.png]]?
+:: I added that map to the InfoBox so we could assess it.  The InfoBox had a map when I started working on the article several months ago, but I removed it because (a) it caused the InfoBox to be so tall it encroached on the following section; and (b) there were already five maps in the article body. <s>In my opinion, a map (still) makes the InfoBox too tall and ugly.</s> Upon further review: the tributary labels in that map are very helpful.  The map is back in there now: let me know what you think. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 15:36, 25 March 2026 (UTC)
+*Why are those five cities in particular cited as "major"?
+:: Three are national capitals: [[Cairo]], [[Khartoum]], and [[Juba]]. Those three cites are from the northern desert part of the Nile. The other two were selected to give representation to the southern highlands (in other words, I didn't want the InfoBox to be "desert centric").  Both are historically significant for the Nile: 	[[Bahir Dar]] is near the source of the Blue Nile; and [[Jinja]] is near one of the sources of the White Nile.  The latter two could be removed if needed.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 15:36, 25 March 2026 (UTC)
+*{{green|"although the Blue Nile contributes over two thirds of the water and silt below the confluence of the two"}} is a bit clunky, especially towards the end. Good to [[WP:EXPLAINLEAD|simplify, especially in the lead]]. I'd say simply that Blue Nile contributes over twice the volume as the White Nile.
+:: Done.  Changed to {{blue| The White Nile is longer and is considered to be the headwaters, yet the Blue Nile contributes over twice the volume as the White Nile. }} [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 18:06, 25 March 2026 (UTC)
+*{{green|"and has followed its present course for about 12,000 years"}} this doesn't seem to be mentioned/cited in the body
+:: Done.  Added a new sentence to body text explicitly stating the most authoritative value (15,000 years); and updated lead to match (15,000).  The 12,000 figure is mentioned by one or two sources, but 15,000 has more weight in the sources. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 18:15, 25 March 2026 (UTC)
+*{{green|"Other countries in the Nile Basin are..."}} the general implication is that all of these countries are fully in the basin.
+::Done. Changed to {{blue| Other countries that lie wholly or partly in the Nile Basin are Burundi, ...}} [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 18:19, 25 March 2026 (UTC)
+*The balance of the paragraph on human history seems off. As seen from {{u|Andrew Davidson}}'s helpful {{Tl|section sizes}} addition on the talk page, the subsections of #Human history are roughly equal on prose size. But in the lead, we have five sentences relating to Ancient Egypt, and then "Nubian, Ethiopian, and Nilotic cultures" and "Egypt from Roman era to colonial era" are completely skipped until one sentence of "Search for the source of the Nile".
+:: Done.  Changed that paragraph in the lead to:
+:::{{green|The Nile was the foundation of the [[Ancient Egyptian civilization]], which relied on the river for nearly every aspect of life. The [[Flooding of the Nile|annual flooding]] of the river deposited nutrient-rich silt along the riverbanks.  This soil supported crops that enabled a sophisticated society to thrive in an otherwise inhospitable desert. The Nile facilitated trade, communication, transportation, and governance.    South of the second Nile cataract lies [[Nubia]], the historical home of the  ancient [[Kerma culture]] and the [[Kushite Empire]].   Many Europeans were fascinated by the Nile, and their explorations around Lake Victoria in the late 19th century located the source of the river. Among the cultures that live along the Nile in the modern era are the the [[Nilotic peoples]],  semi-nomadic cattle herders who practice [[nomadic pastoralism]], moving their cattle seasonally in response to the Nile's floods. }} 
+::     [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 18:43, 25 March 2026 (UTC)
+::Excellent work. [[User:AirshipJungleman29|&#126;~ AirshipJungleman29]] ([[User talk:AirshipJungleman29|talk]]) 09:46, 26 March 2026 (UTC)
+*{{green|"the Nile plays a critical role in the economy of countries in the Nile basin"}} is anyone expecting it to play a critical role for countries outside the basin?
+::Done. Changed to {{blue|In the modern era, the Nile plays a critical role in the economies of Egypt and Sudan, which rely on it to irrigate ...}} [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 18:45, 25 March 2026 (UTC)
+
+;Names and etymology
+All good here.
+
+;Geography
+*Is this section the "Geography of the Nile" or the "Geography of the Nile Basin"? Are they the same thing?
+:: That is an excellent question.  This article mimics the sources, which generally conflate the Nile River and Nile Basin.   I believe that sources avoid separating the basin from the river because such an effort would lead to confusion & contradictions.  From a hydrological point of view:    any drop of water that falls within the Nile Basin will roll downhill and end up in a tributary of the Nile, then the Nile River itself (ignoring evaporation & seeping into the ground).  The only times sources sharply separate the river from the basin is when dealing with human cultures: if a culture is within the basin, but does/did not interact with the Nile or one of its tributaries, then the sources will exclude that culture from a river-oriented discussion. This article follows suit, and only mentions cultures that had significant interaction with the river.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 18:54, 25 March 2026 (UTC)
+*Shahin 2002 p.272 notes that the basin is one-tenth the surface area of Africa, which seems a good comparison to include for general readers who might appreciate a sense of scale more than a very big number.
+::Done.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 19:05, 25 March 2026 (UTC)
+*The map I mentioned above seems to label the different portions of the Nile (Victoria/Mountain etc.) in a way the current one in the section doesn't. Might be more helpful for readers. The current map doesn't help with understanding the sequence.
+::That's a good point: those labels are very helpful for readers.  Definitely a strong argument in favor of keeping that new map in the InfoBox, in spite of the fact that the map makes the InfoBox rather tall. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 19:05, 25 March 2026 (UTC)
+*{{green|"Unlike Lake Victoria, Lake Albert is a deep lake surrounded by mountains."}} is Lake Victoria not surrounded by mountains?
+::That statement is paraphrasing one of the sources.  Lake Victoria is surrounded by rolling hills.  The mountains are farther west,  on the west edge of the [[East African Rift]], along the string of lakes:  [[Lake Tanganyika]], [[Lake Kivu]], [[Lake Edward]], and [[Lake Albert]]. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 19:11, 25 March 2026 (UTC)
+
+*Is the Albert Nile the same as the Mountain Nile? What's the difference between the two?
+::Done.  Clarified the definitions as follows:
+:::* Albert Nile{{snd}}Segment of the White Nile flowing north from [[Lake Albert (Africa)|Lake Albert]] to [[Nimule]]
+:::* [[Mountain Nile]]{{snd}}Segment of the White Nile from the mountains of Uganda to the plains of South Sudan
+::The Albert Nile is a very short segment. The sources do not make clear whether the Mountain Nile includes the Albert Nile.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 19:32, 25 March 2026 (UTC)
+
+*{{green|"At the downstream edge of the Sudd swamp, the Nile is joined by the Bahr el Ghazal River (Arabic: 'gazelle river') a tributary from the west. This confluence occurs in Lake No."}} so is the Sudd swamp identical to Lake No? 
+:: Done.  The Sudd swamp is huge; Lake No is a small lake at the north end of the swamp.   Improved the wording to {{blue|"At the north edge of the Sudd swamp, the Nile passes through Lake No, a small lake where the Nile is joined by the [[Bahr el Ghazal River]] (Arabic: 'gazelle river'){{snd}}a tributary from the west."}}  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 19:44, 25 March 2026 (UTC)
+*{{green|"it reaches into the Mediterranean Sea to a depth of 1,800 meters (5,900 ft)"}} do we know how far offshore this is?
+:: I have removed that ''"... depth of 1,800 meters... "'' sentence from the article ...the cited sources do not state that fact; and I've gone through my notes and cannot find the source.  I've found some new sources that cover the material (with different values), but given the size of the article, it is probably best to simply remove it.  Let me know if you want similar material from new sources ... I can add it.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 20:17, 25 March 2026 (UTC) 
+*{{green|"The final two regions of the Nile Basin are drainage basins of two tributaries: the Blue Nile basin and the Atbarah River basin."}} this is followed by a section on the drainage basins of four tributaries, including one whose drainage basin is larger than that of the Blue Nile and Atbarah combined...
+::Done. I re-organized the entire "Geography" section so the material is  clearer. The seven regions of the Nile basin now map directly to the seven subsections.  And the tributaries are embedded within the appropriate region section. The confusing "Tributaries" section title is now gone. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 20:41, 25 March 2026 (UTC)
+:::Perhaps the description of the Bahr el Ghazal tributary would better fit in "Mountain Nile", where it is first introduced? [[User:AirshipJungleman29|&#126;~ AirshipJungleman29]] ([[User talk:AirshipJungleman29|talk]]) 09:52, 26 March 2026 (UTC)
+::::Done.  Thanks for pointing out that mistake. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 14:36, 26 March 2026 (UTC)
+
+;Sources
+*A little odd that this doesn't come before the discussion of the general Nile geography, which seems more logical.
+:: Done. Moved Sources section above Geography section. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 20:22, 25 March 2026 (UTC)
+* <small>Also odd that the [https://www.youtube.com/watch?v=QB3cRTRvV_0&t=339 true location of the source of the Nile] isn't discussed at all!  </small>
+::I'll carefully review that reliable source :-) [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 20:22, 25 March 2026 (UTC)
+
+;Hydrology
+*The second paragraph seems repetitive.
+::Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 21:19, 25 March 2026 (UTC)
+*{{green|"The White Nile passes through the Sudd swamps before it reaches the Blue Nile; about half the water flowing into the Sudd is lost to evaporation before it flows out"}} again, this seems like it could be more concise
+::  Done. Changed to {{blue|As the White Nile passes through the Sudd swamps about half the water is lost to evaporation.}} [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 21:19, 25 March 2026 (UTC)
+*{{Green|"that the White Nile backs up during this time at the confluence"}} does this mean it flows in reverse, or just stays still, or what?
+::The sources are not clear about that. If I had to guess:  the rate-of-flow slows to near zero, and the water level in the swamp rises (but the water does not flow backwards).  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]])
+*I am not sure about the "Water sources and sinks" subsection. What additional information am I meant to be getting from the tables that I would not get from a simple list of countries/stations and whether they are a source or a sink? Especially considering that every table has the disclaimer {{Green|"Data does not include impacts of the Grand Ethiopian Renaissance Dam, completed in 2025"}}, which seems to amount to "everything may be wrong now".
+::The water balance information is critical for two reasons:
+::# Many hard-science sources talk about the hydrology data at great length; and
+::# The hydrology tables illustrate the [[water scarcity]] issues in the Nile Basin.  Some experts predict that the basin population may nearly double in the 21st century; and if a long-term drought were to afflict Ethiopia, it could lead to famine and international violence.   (See, e.g.,   Bunbury 2023 pp 43-44,61,70).  
+
+::For those reasons, the [[Nile]] article is obligated to present the statistics. To display the information, choices include (in order of increasing verbosity):
+:::a) No tables; use simple prose 
+:::b) No tables; use lists (perhaps bullet lists)
+:::c) Tables: collapse some, un-collapse others
+:::d) Tables: un-collapse all
+::In my judgement, (a) is not true to the sources, nor to the gravity of the information.   (d) is not bad, but might be overwhelming to lay readers.  So that leaves (b) or (c),  both of which use roughly the same amount of vertical real estate.  Tables (c)  are 100x more flexible than lists (b), and will enable the article to evolve and grow in the future decades.  So, the article is using (c) now. 
+
+::Regarding the fact that the GERD dam was just completed in 2025: If anything, that makes the tabular data even more important.  Consider this scenario:  the year is 2050, a drought has hit North Africa, and the GERD reservoir level is falling. Water discharge from the dam is far below normal, and crops in Sudan and Egypt are failing due to lack of irrigation.    The future editors of WP will want to update the [[Nile]] article to show the historical changes to the  the flow of the river:   How much water reached Egypt annually in 2020 (when they stared filling the GERD reservoir)?  How much reached Egypt in 2025 (GERD filled)? How much in 2030? 2040?  How much after a drought had been going on for 5 years? 10 years?  These future WP editors will probably evolve the tables to look like this:
+
+:::{| class=wikitable
+|+ Hydrology table may expand to look like this: 
+! Country
+! Water balance<br>2020
+! Water balance<br>2030
+! Water balance<br>2040
+|-
+! Ethiopia
+| 1111|| 222|| 333
+|-
+! ... more<br>countries ...
+|  888|| 000|| 999
+|-
+! Egypt
+|  333|| 444|| 555
+|-
+! Sudan
+|  6666||  7777|| 3333
+|}
+
+::The hydrology tables in today's [[Nile]] article are the baseline for this important information.
+
+::In summary, the scientific sources (as opposed to the cultural sources) heavily cover the hydrology statistics; and a tabular layout is essential to presenting the information in an organized fashion.  As the 21st century unfolds, the tables can evolve to display essential water scarcity data.     [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 22:00, 25 March 2026 (UTC)
+:::Alright, an argument from coverage in the sources is the best way to establish [[WP:DUEWEIGHT]], so I can accept that. [[User:AirshipJungleman29|&#126;~ AirshipJungleman29]] ([[User talk:AirshipJungleman29|talk]]) 10:01, 26 March 2026 (UTC)
+
+;Ecology
+*{{green|"There are 36 industries that discharge their pollution sources directly into the Nile, and 41 into irrigation canals."}} do the groups overlap or are they separate?
+:: Unknown.  The source is a 2005 report by the [[Nile Basin Initiative]] (NBI) which summarizes some older data including a 1980 report which examined 360 industries and found that 36 of the 360 discharged directly into the river.  I cannot find a copy of the 1980 report.  From context (in the 2005 report) it ''appears'' that all 360 industries are distinct, but I cannot be certain. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:18, 26 March 2026 (UTC) 
+:::Well, I think the reader gets the point, so that's fine. [[User:AirshipJungleman29|&#126;~ AirshipJungleman29]] ([[User talk:AirshipJungleman29|talk]]) 10:01, 26 March 2026 (UTC)
+*{{green|"The sacred ibis was important in the ancient Egyptian religion, and millions of the ibis were ritually sacrificed, leading to the eventual extinction of the species in Egypt"}} our article [[African sacred ibis]] state they were present well into the second millennium AD; not sure ancient Egyptian sacrifices can be said to have led to the extirpation...
+:: Done. Thanks for catching that mistake. It now reads {{blue|"... The species became locally extinct in Egypt in the late 19th century, but remains common in central and southern Africa."}} [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:31, 26 March 2026 (UTC)
+;Geological history
+*{{green|"One hypothesis describes the Nile's geological history as a sequence of five evolutionary periods."}} ... is there a consequence to this sentence I'm not seeing?
+:: Done.  Changed the wording to {{blue|"One hypothesis describes the Nile's geological history as a sequence of the following five evolutionary periods."}} ... the following five paragraphs then describe the five periods (one per paragraph).   Also, the attached footnote contrasts it with an alternative hypothesis that uses eight periods. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:36, 26 March 2026 (UTC) 
+*When did Obweruka disappear?
+:: Done.  I added a footnote stating {{blue|"Obweruka existed from about 7.5 MYA to 2.5 MYA."}}  The source also says that around 2.5 MYA that paleolake started draining to the west, implying it existed for a brief while after 2.5 MYA, but they don't go into details. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:51, 26 March 2026 (UTC)
+
+;Human history
+*Don't think sentences should begin with "and".
+::Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:55, 26 March 2026 (UTC)
+*I don't think the order/naming of the cataracts is ever explained in prose, which makes it somewhat confusing when numbers start getting dropped in.
+::Done.  Enhanced the [[Nile#Main Nile]] section to explicitly name all six (1,2,3,4,6).  In conjunction with the existing map in the [[Nile#Sources]] section that shows all cataracts, readers should be satisfied. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 01:01, 26 March 2026 (UTC)
+*Are there any details about how the Kerma culture/Funj Sultanate/Ethiopian Empire had relationships with the Nile, instead of just listing where and when they existed?
+:: No, I could not find many specifics about how they interacted with the river (except the Dinka/Nuer pastoral migrations).  If one were to follow [[WP:PROPORTION]] to the letter, the article would probably not mention those cultures at all because 98% of the cultural material in the sources focuses on Egypt & Islamic Sudan.   I'm using editorial discretion and making a special effort to include Nubian/black cultures - in other words, to avoid being too Egypt-centric.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 01:16, 26 March 2026 (UTC)
+*Does footnote bh ("In 1857, John Hanning Speke and Richard Francis Burton started a search...") really add to the existing text?
+::Done.  Removed that footnote (along with 20 or 30 other minor footnotes). [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 01:08, 26 March 2026 (UTC)
+
+*Should the "Search for the source of the Nile" subsection be better placed as a subsection of "Sources", where it could be better integrated with the existing text?
+::  I went back and forth on that choice. In the end, I feel it is better within "Human History" because that section is a list of human interactions with the river.  Whereas the "Sources" section is primarily a statement of present-day geographical data.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 03:25, 26 March 2026 (UTC)
+
+;Water politics in the modern era
+*Footnote bl needs a citation.
+:: Done.  Removed the footnote (I think the statement is true, but I cannot find a source that directly supports it). [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 01:22, 26 March 2026 (UTC)
+*{{green|"Egypt reserved the right ... Egypt assumed the right ... Egypt assumed the right"}} is a trifle repetitive.
+::Done. Changed to {{blue|"Egypt reserved the right to monitor the Nile flow in the upstream countries, to undertake river-related projects without the consent of upriver nations, and to veto any construction projects that would adversely affect Egypt."}} [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 01:28, 26 March 2026 (UTC)
+*{{green|"Egypt and Sudan in the north wielded more power than the other ten nations to the south"}} comes up around three times
+:: Done. Eliminated repetition. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 01:34, 26 March 2026 (UTC)
+*If a "Declaration of Principles" was signed in 2015, what was the point of the subsequent talks in the US, the African Union, and the UAE, and the request for UNSC intervention?
+:: The sources do not clearly explain (see Ranjan 2024, pp. 28-29).  Reading between the lines, the 2015 Declaration of Principles was apparently very vague, and skimpy on details, numbers, and deadlines. Also: Egypt & Ethiopia didn't trust each other to carry-out whatever they signed.  But that is speculation on my part.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 01:38, 26 March 2026 (UTC)
+
+;Economy
+*{{green|"The southern nations have few irrigation canals, instead relying on extensive rainfall: the amount of soil water used annually for crops in the south is 229 km3, which is more than twice the total annual water flow of the Nile River (about 100 km3)."}} this sentence largely duplicates what's just been said
+::Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 02:52, 26 March 2026 (UTC)
+*{{green|"accounts for the majority of inland (fresh water) fish caught in the African continent ... is more than half of the total fresh water yield from the entire African continent"}} more duplication
+::Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 02:52, 26 March 2026 (UTC)
+*[[Nile boat]] is linked as a hatnote under [[Ancient Egyptian civilization]] but doesn't get a mention here?
+:: Done.  I removed the hatnote link to [[Nile boat]] because the term "nile boat" is not a commonly used term by academics, and the term is not well defined. The [[Nile boat]] article is a bit misleading in its current form; and linking to it could confuse readers.  The article [[Ancient Egyptian royal ships]] is better quality, but has a very narrow focus. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 03:02, 26 March 2026 (UTC)
+*Be wary of [[MOS:SOB]] in note bw.
+:: Done, I think.   The footnote IDs have changed over the past couple of days, but I assume that is the footnote that listed a dozen parks near the Nile?  If so: that footnote has been deleted.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 03:07, 26 March 2026 (UTC)
+*This article implies that the purpose of the proposed [[Jonglei Canal]] was to improve navigation, but the relevant article indicates its purpose was increasing agriculture on the lower Nile.
+:: Done.  Changed wording to {{blue|"Plans to build a canal through the swamp – called the Jonglei Canal – were initiated in the early 20th century with the goal of providing more water  to grow cotton in Egypt. Construction was ..."}}. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 02:08, 26 March 2026 (UTC)
+*It feels like the third paragraph of "Transportation" would work better as the first.
+::Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 03:09, 26 March 2026 (UTC)
+*{{green|"along with the nearby temples that were moved during construction to avoid becoming submerged"}} this feels like it should have been discussed already
+:: The temple relocation was discussed above in the section [[Nile#Post-colonial era]] - {{blue|"An international campaign to save some monuments from becoming submerged by the new reservoir  ..."}}. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 03:12, 26 March 2026 (UTC)
+:::My mistake. [[User:AirshipJungleman29|&#126;~ AirshipJungleman29]] ([[User talk:AirshipJungleman29|talk]]) 10:01, 26 March 2026 (UTC)
+
+;In culture
+*Seems very non-modern focused. No mention of the renowned ''[[Death on the Nile]]'' and adaptations, recent political pop songs [https://www.bbc.co.uk/news/world-africa-53862408 from both Egypt] and [https://journals.open.tudelft.nl/ijwg/article/view/7359 Ethiopia], productions such as ''[[The Wizard of the Nile]]'', etc.?
+:: Done. Thanks for providing those outstanding links and sources.  I've  added four works of art to the "In Culture" section from the years 1871, 1937,  1966, and 2023:
+::* {{Green|" [[Giuseppe Verdi]] was commissioned by [[Isma'il Pasha]] to compose an opera to celebrate the opening of the [[Suez Canal]]. The opera, ''[[Aida]]'', was performed at the newly-constructed [[Egyptian Royal Opera House]] in 1871.  The opera's third act is set on the banks of the Nile river."    }}
+::*{{Green|"  [[Agatha Christie]] wrote the popular 1937 mystery novel ''[[Death on the Nile]]'', about a murder on a Nile steamboat, which  inspired several adaptations."    }}
+::* {{Green|"  ''[[Adrift on the Nile]]'' is a 1966 novel by [[Egypt]]ian author and [[Nobel Laureate|Nobel prize]] winner [[Naguib Mahfouz]]  about a young man that lives on a houseboat on the Nile.  The river is a metaphor for a life that he cannot control, leading him to turn his back on society."     }}
+::* {{green|"Since the start of construction of the Grand Ethiopian Renaissance Dam, Ethiopian musicians have produced songs that celebrate and glorify the Nile and the dam."}}
+::To stay in compliance with the [[WP:OR]] or [[WP:SYNTH]] policies I'm tentatively limiting the article to art/film/music ''that sources analyze in the context of the Nile'' (rather than performing my own search for artworks that ''happen'' to mention the Nile). [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 03:24, 27 March 2026 (UTC)
+:::One more option {{u|Noleander}}; you may have access to a recent publication entitled ''Ancient Egypt in Video Games'' through [[WP:TWL]] ([https://www-degruyterbrill-com.wikipedialibrary.idm.oclc.org/document/doi/10.1515/9783111534046/html my link here]); the fifth chapter (titled ''Pharaohs, Labourers and Wonder Builders: Illustrating Ancient Egypt with Game Mechanics in Strategy Games'') contains a significant amount of discussion on the Nile's depiction in the game ''[[Civilization VI]]'' (pp. 95, 100) and wider culture (p. 101). [[User:AirshipJungleman29|&#126;~ AirshipJungleman29]] ([[User talk:AirshipJungleman29|talk]]) 13:57, 28 March 2026 (UTC)
+:::: {{yo|AirshipJungleman29}}  Done.  Used that source and added {{green|"The Nile plays a prominent role in several [[video game]]s, including ''[[Civilization VI]].''{{sfn|Tian|2025|pp=95,100-102}}"}} - The source has a section ''"A Problematic Representation"'' which asserts that many European/American representations of ancient Egypt incorrectly portray the civilization as being 100% focused on the river (and ignore aspects of the civilization that were located in (or used) the desert).   That is interesting, but I have not seen it echoed in other sources.  In fact, many sources say the opposite: that ancient Egypt ''was'' strongly focused on the river in nearly every way.  So I did not put that assertion into the [[Nile]] article.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 15:40, 28 March 2026 (UTC)
+I might add to the above later. [[User:AirshipJungleman29|&#126;~ AirshipJungleman29]] ([[User talk:AirshipJungleman29|talk]]) 12:45, 25 March 2026 (UTC)
+:{{yo|AirshipJungleman29}} - I have replied to all the issues you mentioned above.  I implemented the vast majority, and added explanations for the handful that were not implemented.  You inputs have been exceedingly valuable, and very welcome!  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 02:00, 27 March 2026 (UTC)
+:'''Support''' a wonderful article, ready to join the list of vital-3 FAs. [[User:AirshipJungleman29|&#126;~ AirshipJungleman29]] ([[User talk:AirshipJungleman29|talk]]) 15:44, 28 March 2026 (UTC)
+::::{{reflist-talk}}
+
+====Mr rnddude====
+I'm not sure I have the time or energy to review the prose of the whole article, but I want to take a look at the statements related to ancient Egypt.
+*{{green|In the ancient Egyptian language, the same word was used for 'Nile' and 'river': ''jtrw''.}} and {{green|The Nile was also called Ar or Aur meaning 'black' – in reference to the dark color of the Nile floodwaters as they carry sediment from upriver.}} – These two statements employ different transliteration techniques. The former is preferrable over the latter and the following comment will illustrate why. 
+*The second statement is additionally dubious and was difficult to track down. The Egyptian word for 'black' is ''km''; I can find no reference in any of my dictionaries or grammar books (Allen, Budge (outdated, by comprehensive), Faulkner, or Gardiner) to a word that could be rendered as 'ar' or 'aur' that means 'black'. The transliteration choice here renders it quite difficult to work out what word is even being referred to: Is it ''ꜣr'', ''ꜥr'', ''ꜣwr'', ''ꜥwr'',  ''wr'', ''ỉr''/''jr'', or even ''ꜥꜣ''? The only ones I can make sense of are the last three. There is ''km-wr'' or 'Great Black' (''km'' = black; ''wr'' = great). The only problem is that this name refers to the [[Great Bitter Lake|bitter lakes region]] of Egypt. The other option is ''jtrw-ꜥꜣ'' (Jeteru-aa or Iteru-aa) or ''jr-ꜥꜣ'' (Jer-aa or Ir-aa) meaning 'Great River'.  Budge gives ''jwr-ꜥꜣ'' as 'ȧur-āa' as a name for the Nile's most significant branch or ''jwr'' as 'ȧur' meaning 'stream, canal, river, arm of the Nile'. That explains 'Aur' though with an outdated transliteration; but it does not explain 'black'. {{pb}} It also doesn't help that the source states that ''ⲫⲓⲁⲣⲟ'' is the Coptic word for 'black'. For one: Which dialect? For two: No? The word for 'black' is ''ⲕⲁⲙ'' (Sahidic) or ''ⲭⲙⲟⲙ'' (Bohairic) which descend from ''km''. The word for river is ''ⲉⲓⲉⲣⲟ'' (Sahidic) or ''ⲓⲁⲣⲟ'' (Bohairic). The Britannica article doesn't cite its sources here, so beyond this I'm in the dark. (Sources for Coptic: [https://gnosis.study/library/%D0%9A%D0%BE%D0%BF%D1%82%D1%81%D0%BA%D0%B8%D0%B9%20%D1%8F%D0%B7%D1%8B%D0%BA/%D0%A1%D0%BB%D0%BE%D0%B2%D0%B0%D1%80%D0%B8/ENG/Azevedo%20J.%20-%20A%20Simplified%20Coptic%20Dictionary.%20Sahidic%20Dialect.pdf Sahidic dictionary][https://coptic-dictionary.org/results.py?coptic=&dialect=any&pos=any&definition=Black&def_search_type=exact+sequence&lang=any Online Coptic dictionary][https://copticlang.bizhat.com/coptdict.pdf Bohairic dictionary]) [[User:Mr rnddude|Mr rnddude]] ([[User talk:Mr rnddude|talk]]) 00:25, 27 March 2026 (UTC)
+:: @[[User:Mr rnddude|Mr rnddude]] - Always good to get input from a subject-matter expert.  I've removed the Coptic sentence from the article; and also the "Aur" Egyptian word sentence.  The remaining two sentences are:
+:::1) {{green|"In the ancient [[Egyptian language]], the same word was used for 'Nile' and 'river': {{lang|egy-latn|jtrw}}."}}<nowiki>{{sfn|Allen|2000|pp=21,101}}</nowiki>
+:::: Allen p 21: {{blue|"... the Nile (known in Egyptian only as '''''jtrw''''' 'the river') ..."}}
+:::: Allen p 101: {{blue|"... '''''jtrw''''' 'river' ..."}} 
+:::2) {{green|"Egyptians called their own country {{lang|egy-latn|kmt}} meaning 'black',  in reference to the dark color of the Nile floodwaters as they carried sediment from upriver."}}<nowiki>{{sfn|Allen|2000|p=470}}</nowiki>
+:::: Allen : p 470: {{blue|"'''''kmt''''' (noun) 'Egypt' (literally 'The Black' referring to the cultivated soil along the Nile."}}
+:::: Allen: p 339 (footnote) {{blue|"The word '''''kmt''''' 'Egypt' literally means 'black', referring to the  soil of the Nile Valley."}}
+::Sentence (2) was in the article until a month ago, but was commented out for  size reasons ... but it still appears in the raw Wiki Markup, so I want to make sure it is accurate (I've restored it to the body text for now, so it is more visible). If there is a source that suggests that sentences 1 or 2 are wrong or misleading, I can use that source  instead of (or in addition to) Allen.  If the source is not online, can you could provide me with the  relevant snippet?  Thanks!  - [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 03:12, 27 March 2026 (UTC)
+:::The first sentence is fine. The second sentence needs an adjustment, but nothing to do with the source. [[James Peter Allen]] is HQRS. As Allen states, ''kmt'' refers to the colour of the land or soil of the Nile Valley. You have ''kmt'' as referring to 'the dark color of the Nile floodwaters' from the sediment it carries as it flows – I assume that is because of the Britannica source – I would switch the phrasing to 'in reference to the color of the fertile soil of the Nile valley' or similar. You may also specify a translation of ''kmt'' as 'the Black Land'. You have a different copy of Allen with differing pagination, but check the 'Dictionary' section under 'k' (alphabetically ... š, q, '''k''', g, t ...), you might also be able to ctrl+f for {{green|literally "Black land"}} (p. 533 in mine, probably p. 505ish in yours; your p. 101 is my p. 128). [[User:Mr rnddude|Mr rnddude]] ([[User talk:Mr rnddude|talk]]) 05:19, 27 March 2026 (UTC)
+*Egyptian hieroglyphs can be quite complicated. You give the hieroglyphs for river or Nile as: <hiero>M17-X1:D21-G43-N35:N35:N35-N36:N21*Z1</hiero> This form appears to refer to the [[Schoenus]] or 'river-length'. There are often multiple ways to render Egyptian words. For just 'river', Allen (p. 515 for me) gives two variants, the first being: <hiero>M17-X1:D21-G43-N35:N35:N35-N36:N23*Z1</hiero> Faulkner uses a more minimalist version, [https://archive.org/details/concisedictionar0000faul/page/32/mode/2up see p. 33 (if you have an archive.org account to borrow)] or [https://archive.org/details/pj1425.f3 p. 40 (no borrow needed)], with: <hiero>M17-X1:D21-G43-N36</hiero> Gardiner, [https://archive.org/details/egyptiangrammar0000alan/page/42/mode/2up?q=river See p. 43] & [https://archive.org/details/egyptiangrammar0000alan/page/622/mode/2up?q=river p. 623], goes with: <hiero>M17-X1:D21-G43-N35:N35:N35</hiero> There are many more variants as well. Both Faulkner and Gardiner also use the version that is currently in article for 'river-measure'. For Faulkner see same page and for Gardiner [https://archive.org/details/egyptiangrammar0000alan/page/198/mode/2up?q=river see p. 199]. This convention may be purely for convenience or there may be a meaningful difference. I don't know, I don't measure rivers. [[User:Mr rnddude|Mr rnddude]] ([[User talk:Mr rnddude|talk]]) 07:29, 27 March 2026 (UTC)
+*:Done.    I [https://en.wikipedia.org/w/index.php?title=Nile&diff=1345677479&oldid=1345676616  updated the article] to use the plainer hieroglyph from Gardiner (p 43, 623), and added a footnote telling readers about alternative hieroglyphs, with cites to Faulkner and Allen.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 13:32, 27 March 2026 (UTC)
+
+====A. Parrot====
+Some comments exclusively on the ancient Egypt-related portions.
+
+*"A tune, Hymn to the Nile…" While Egyptian hymns are often presumed to have been sung, there is no record of what melody may have been used for any dynastic Egyptian poem, so "tune" seems like the wrong word. The webpage used as a reference is also less than ideal, as it's based on a text from 1907 and probably overstates the age of the hymn. [https://www.ucl.ac.uk/museums-static/digitalegypt/literature/floodindex.html This page] is more up-to-date, and one of its subpages does include a translation. You seem to be listing just a sampling of cultural references to the Nile in these sections, so I won't press this point, but it may be worth mentioning that this hymn is only the best-known of a handful that were dedicated to the Nile. (I can source this point myself if you want to include it.)
+::Done.  Removed word "tune" and changed to use the new source. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 13:51, 27 March 2026 (UTC)
+*"…the east side was for the living, and the west side  – including the Theban Necropolis and the Giza pyramid complex – was for the dead." This is a gross oversimplification. Many ancient Egyptian cities, including the largest of them all, Memphis, were on the west bank. It's true that most tombs were west of the Nile, but even that wasn't universal, and it's related to beliefs about the sun rather than the idea of the Nile as a dividing line, so my recommendation would be to cut this whole sentence.
+::Done. Removed sentence. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 13:35, 27 March 2026 (UTC)
+
+*"The Egyptian religion placed the source of the Nile's annual flood at Elephantine Island (at the first cataract) where the floodwaters were believed to flow up out of the netherworld." This is true but kind of incomplete. On the pages cited, Assmann says there were two purported sources for the Nile: the First Cataract for Upper Egypt and a source in the vicinity of what is now Old Cairo for Lower Egypt. That said, most other secondary sources only mention the belief that the Nile sprang from the First Cataract region, and I sometimes wonder what Egyptian text Assmann drew this from.
+:: I've looked at a few sources to see how they discuss the ancient Egyptians' view of the source(s) of the Nile, and - as you say - they emphasize the Elephantine Island location.  None of the sources I looked at mention the Old Cairo second location except Assman.  For that reason, it is probably best to leave the article as it stands now (mentioning only Elephantine). [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 14:24, 27 March 2026 (UTC)
+*Following on the two points above, instead of the east bank and west bank, you could say something about the division between [[Upper Egypt]], corresponding to the main Nile downstream of the First Cataract, and [[Lower Egypt]], corresponding to the Delta. The political unification of Upper and Lower Egypt is usually considered the beginning of dynastic Egyptian history, so it might even be mentioned in the section on ancient Egyptian history. This division, the "Two Lands", ''was'' central to the Egyptian worldview. E.g., the illustration of Hapy in the myth and religion section is the ''sema-tawy'' motif, representing him binding together the Two Lands. (I can source these points myself if you want to include them.)
+:: {{yo|A. Parrot}} - I will take you up on your offer :-)  Would you please steer me towards a source or two that discusses the Upper/Lower division and how that division related to the Nile River.  Thanks! [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 14:27, 27 March 2026 (UTC)
+:::Allen 2000, p. 22, points out the division between Upper and Lower Egypt. Other sources are numerous (e.g., the ideological duality of Upper & Lower Egypt and their unification appears in the first paragraph of the "Lower Egypt" entry in the ''[[Oxford Encyclopedia of Ancient Egypt]]'', vol. 2 p. 305, and the start of Chapter 2 of ''A History of Ancient Egypt'' by [[Marc Van De Mieroop]], pp. 27-29). Possibly the most significant point is a passage in ''The Complete Cities of Ancient Egypt'' by Steven Snape (pp. 181-182) about how the shifting waterways in the Delta made the patterns of settlement there much more complex than in Upper Egypt. If you can't access these sources, I can type up these passages and email them to you over the weekend. [[User:A. Parrot|A. Parrot]] ([[User talk:A. Parrot|talk]]) 16:29, 27 March 2026 (UTC)
+::::Thanks for identifying those sources.  I can access them all, so no worries about providing me with quotes. I should be able to take it from here. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 17:10, 27 March 2026 (UTC)
+:::::{{yo|A. Parrot}} - I've added two new passages into the article:
+:::::::{{green|"Ancient Egypt consisted of two regions: [[Lower Egypt]] (the Nile Delta) and [[Upper Egypt]] (the Nile Valley, roughly between [[Giza]] and the first cataract).  The Nile played a role in determining the unique character of each region, because the ever-shifting waterways in Lower Egypt meant that transportation routes, settlements, and administrative regions were often forced to relocate.  The Lower and Upper regions were each  represented by a unique Nile plant: [[Cyperus papyrus|papyrus]] and  [[Cyperaceae|sedge]], respectively."}} {{harvnb|Redford|2001|pp=17,305-306|loc=Articles: "Geography", "Lower Egypt"}}. {{harvnb|Redford|2001a|pp=464-466|loc=Article: "Upper Egypt"}} 
+::::::and
+::::::: {{green|" The sun god [[Ra]] passed through the sky each day from east to west, and the three phases of the day (sunrise, daytime, and sunset) corresponded to the human lifecycle: birth, life, and death. For this reason, many burial sites were positioned on the west bank of the Nile, where they would be closer to the setting sun."}}  {{harvnb|Redford|2001|p= 147 |loc=Article:  "Hymns"}}. 	 {{harvnb|Redford|2001a|pp= 123, 376 |loc=Articles: "Re", "Temples" }}.  {{harvnb|Tvedt|2021|p=10}}. 	 {{harvnb|Fleming |Lothian | 1997 | pp = 18, 29, 60}}.	 
+
+::::::My intention is not to present a complete explanation of these complex topics to the reader; rather, it is to illustrate that the Nile river permeated nearly every aspect of the life of Ancient Egypt. These seem like two excellent examples. <small> Regarding the "burial on west bank of Nile" material: Although the river was not the ''reason'' that many burials were on the west bank, many readers will be curious ''why'' so many major burial sites were on that side.  It seems appropriate for the [[Nile]] article to answer that common question, even if the explanation is not based on the river itself.</small>  If you have a moment to review this new text, and let me know if they are wanting, it would be appreciated. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 22:49, 27 March 2026 (UTC)
+:{{yo|A. Parrot}} - Thanks: those are some excellent suggestions and ideas. I see from your home page that you have written several articles about ancient Egypt that achieved Featured Article status ... nice work!  I'm wrapping up for the day, but I'll start implementing your suggestions tomorrow. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 03:20, 27 March 2026 (UTC)
+
+*I haven't reviewed extensively enough to call this a support, but all my concerns have been addressed. [[User:A. Parrot|A. Parrot]] ([[User talk:A. Parrot|talk]]) 22:09, 28 March 2026 (UTC)
+
+====Llewee====
+*"Egyptians called their own country" - not sure the word "own" is adding much
+:: Done. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 19:31, 29 March 2026 (UTC)
+
+*"The distance was measured along the centerline of the river using satellite imagery." -Obviously writing from a position of ignorance, but it is not hugely clear to me why this is significant.
+:: Hmmm. I'm not sure how to improve that.  When geographers measure the length of a river, there are various approaches: then can measure down the centerline; or along the left bank or the right bank; or "hug the inside corner" for a shorter distance. Each approach will produce a different value for the river's length. The purpose of that sentence {{green| "... distance was measured along the centerline..."}} is to tell the reader what approach these geographers were using.  Then, when comparing with the lengths of ''other'' rivers, measured by ''other'' geographers, one can tell if they  are using the same approach or a different approach (are they comparing apples to oranges?).   I'm happy to improve the text to make it clearer - if anyone has suggestions let me know & I can implement it. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 19:31, 29 March 2026 (UTC)
+
+*"Although the Nile is the longest river in the world, it is far from having the largest discharge." - This feels like odd wording to me.--[[User:Llewee|Llewee]] ([[User talk:Llewee|talk]]) 22:42, 31 March 2026 (UTC)
+:: Done.  Changed to {{blue|"Although the Nile is the longest river in the world, it does not have the the largest discharge." }} [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:00, 1 April 2026 (UTC)
+
+*"backs up during this time at the confluence" - Is this where it meets the river?
+:: Done.  Added a wikilink to [[confluence]] at that location; and also at the 1st occurrence of "confluence". [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:00, 1 April 2026 (UTC)
+
+*"The cumulative amount of rock eroded in the past 30 million years from the Ethiopia headwaters of the Nile is about 102,000 km3, which is roughly comparable to the volume of the soil in the Nile Delta (including the underwater portion) which is about 150,000 km3" - Is this soil all eroded from the rock?
+:: Done.  Clarified wording to be:  {{blue|"The soil in the Nile Delta originated as rocks in Ethiopia. The cumulative amount of rock eroded in the past 30 million years from the Ethiopia headwaters ...}}. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:10, 1 April 2026 (UTC)
+
+* "These data were" - I think "This data was" or "These figures were" would sound more natural here.
+::Done.  Changed to {{blue|"This data was ..."}}. [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:10, 1 April 2026 (UTC)
+
+* "Every measurement site had unique collection time spans, specified in the sources provided for each datum." - You only have a citation after one of the bullet points so it is hard to know what sources you are referring to.
+::Done. Changed to: {{blue|"The sediment transport data was gathered over a wide range of years, spanning from 1997 to 2019. Every measurement site had unique collection time spans, specified in Lemma 2019, p. 11 and Sutcliffe 2009, p. 359.}} [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:17, 1 April 2026 (UTC)
+
+* "as well as policy makers who negotiate water sharing issues" - It might be helpful to include an example of the kind of thing you mean here. Perhaps in a footnote.--[[User:Llewee|Llewee]] ([[User talk:Llewee|talk]]) 23:12, 31 March 2026 (UTC)
+::Done. Added new footnote:  {{blue|"Sources and sinks are useful to policy makers when negotiating international water-sharing issues, such as dam construction. In the 21st century, Egypt and Sudan continue to rely on extracting large amounts of water from the Nile for their existence. Some experts predict that the Nile Basin may experience a water scarcity problem in the future, if population growth, agricultural needs, and climate change combine to create a scenario where the water demands exceed the amount of water available.}} (citations are in the article, omitted here for clarity). [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:28, 1 April 2026 (UTC)
+
+* "The data is based on measurements made at a dozen river measurement stations." - Do these stations use the same measurement methods as discussed in the previous section?
+::More or less. To measure discharge (flow) they measure how deep & wide the river is, and multiply it by the speed of the river current.  To measure sediment transport: they see how much dirt/sand is in a liter of river water & multiply it by the discharge.  Let me know if you think that should be explained in the article.  Due to article size issues, I'm reluctant to add material without a reviewer saying it is necessary.  [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 00:32, 1 April 2026 (UTC)
+
+*"Measurements of the Nile's flow have always been essential to help Egyptians manage their safety and irrigation. ... An ideal flood in Egypt – not too high and not too low – was a 6-meter (20 ft) rise over the non-flood water level." - I assume the human aspects of the river's history come up later. Nevertheless, it might be helpful to briefly explain why it was beneficial for Egyptians to know these things and why a certain level of flooding was desirable.
+:: Done: Changed to {{blue|"An ideal flood in Egypt – not too high and not too low – was a 6-meter (20 ft) rise over the non-flood water level. Any higher and disastrous floods may damage the river communities; any lower, and fertile silt would not be deposited on the croplands."}} [[User:Noleander|Noleander]] ([[User talk:Noleander|talk]]) 02:50, 1 April 2026 (UTC)
+
+* doing [[User:Llewee|Llewee]] ([[User talk:Llewee|talk]]) 18:09, 29 March 2026 (UTC)

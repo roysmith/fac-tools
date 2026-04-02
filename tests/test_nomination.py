@@ -148,3 +148,12 @@ def test_archive_number_raises_on_malformed_nomination():
     )
     with pytest.raises(ValueError, match="malformed nomination path"):
         nom.archive_number()
+
+
+@pytest.mark.xfail(
+    reason="https://github.com/earwig/mwparserfromhell/issues/353",
+    strict=True,
+)
+def test_unbolded_oppose_does_not_count_as_vote(fac):
+    nom = fac("Nile/archive1/1346716243")
+    assert nom.oppose_count() == 1
