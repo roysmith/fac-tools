@@ -156,4 +156,4 @@ def test_archive_number_raises_on_malformed_nomination():
 )
 def test_unbolded_oppose_does_not_count_as_vote(fac):
     nom = fac("Nile/archive1/1346716243")
-    assert nom.oppose_count() == 1
+    assert nom.oppose_count() == 0
