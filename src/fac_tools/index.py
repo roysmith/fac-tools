@@ -1,11 +1,9 @@
 from __future__ import annotations
+from collections.abc import Iterable
 from dataclasses import dataclass
-from functools import cache
-import re
 
 import mwparserfromhell as mwp
 from mwparserfromhell.wikicode import Wikicode
-from mwparserfromhell.nodes import Tag, Node
 
 
 @dataclass(frozen=True)
