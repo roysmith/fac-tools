@@ -58,16 +58,16 @@ def main():
 
 
 def process_index():
-    index_page = Page(site, INDEX_PAGE)
-    index = Index.build(index_page.text)
+    index = Index.build(Page(site, INDEX_PAGE).text)
     buffer = StringIO()
+
     buffer.write(f"__NOTOC__\n")
     buffer.write(f"{{{{notice|Please don't edit this page manually!}}}}\n")
 
     for section_name in ["Nominations", "Older nominations"]:
-        nominations = find_noms_in_section(index_page, section_name)
         buffer.write(f"=={section_name}==\n")
-        process_section(nominations, buffer)
+        noms = index.find_noms(section_name)
+        process_section(noms, buffer)
 
     text = buffer.getvalue()
     if args.dry_run:
@@ -127,21 +127,6 @@ def process_nomination(nom: Nomination, now: datetime, buffer: StringIO):
     buffer.write(f"{plural(nom.support_count(), 'support', 'supports')}")
     buffer.write(f"{{{{cdot}}}}")
     buffer.write(f"{plural(nom.oppose_count(), 'oppose', 'opposes')}\n")
-
-
-def find_noms_in_section(index_page: Page, section: str) -> Iterable[str]:
-    """Return the names of the active FAC nominations in a given section.
-    Section would typically be be one of "nominations" or "older nominations".
-    It is assumed section names are unique.
-    """
-    code = mwp.parse(index_page.text)
-    sections = code.get_sections(levels=[2], matches=f"^{section}$")
-    if len(sections) != 1:
-        raise ValueError(f"found {len(sections)} sections matching '{section}'")
-    for t in sections[0].filter_templates(
-        matches="Wikipedia:Featured article candidates/.*/archive\d+"
-    ):
-        yield str(t.name)
 
 
 def build_nomination(nom_page: Page) -> Nomination:
