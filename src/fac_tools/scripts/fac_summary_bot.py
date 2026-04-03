@@ -1,5 +1,4 @@
 from argparse import ArgumentParser, BooleanOptionalAction
-from collections.abc import Iterable
 from datetime import datetime
 from io import StringIO
 import requests
