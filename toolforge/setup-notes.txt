@@ -7,7 +7,7 @@ On bastion:
 $ become fac-summary-bot
 $ git clone git@github.com:roysmith/fac-tools.git
 
-On krb backend
+On k8s backend
 $ cd $HOME
 $ python3 -m venv --prompt=fac-summary-bot venv
 $ . venv/bin/activate
