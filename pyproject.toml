@@ -18,6 +18,7 @@ dependencies = [
     "pytest",
     "pytest-datadir",
     "pywikibot",
+    "pytest-socket",
     "requests_oauthlib",
 ]
 
