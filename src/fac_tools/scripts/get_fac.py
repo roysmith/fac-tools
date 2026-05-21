@@ -1,17 +1,29 @@
-from argparse import ArgumentParser
+from argparse import ArgumentParser, RawDescriptionHelpFormatter
 from dataclasses import astuple
 import json
 from pathlib import Path
+from textwrap import dedent
 
 from pywikibot import Site, Page
 from fac_tools import Nomination, Revision
 
 
 def main():
-    parser = ArgumentParser()
+    parser = ArgumentParser(
+        formatter_class=RawDescriptionHelpFormatter,
+        description=dedent("""\
+            Gets a WP:FAC nomination from the wiki and stores data locally.  Two
+            files are created:
+
+                - <nom>/<revid>/content.txt (the wikitext of the nonmination page)
+                - <nom>/<revid>/revs.json (some data about the nomination revision history)
+                                    
+            These would typically be added to version control for use in unit tests.
+            """),
+    )
     parser.add_argument(
         "nom",
-        help="Nomination page, i.e. 'Wikipedia:Featured article candidates/My Page/archive1'",
+        help="Nomination page, i.e. 'Wikipedia:Featured article candidates/<nom>/archive1'",
     )
     args = parser.parse_args()
 
